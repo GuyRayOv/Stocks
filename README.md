@@ -1,12 +1,12 @@
-# 🎯 Deep Learning  Pipeline Project for time seroiues
+# 🎯 Deep Learning  Pipeline Project for Time Series
 
-This repository contains a modular **deep learning** project for **time seroiues**, developed using YF stocks datasets.  
+This repository contains a modular **deep learning** project for **time series**, developed using YF stocks datasets.  
 
 ---
 
 ## 📘 Project Overview
 
-The project implements all major stages of a **deep learning pipeline of time seriuses**, including:
+The project implements all major stages of a **deep learning pipeline of time series**, including:
 
 1. **Data Preparation** – loading, cleaning, structuring a stock price dataset for XGB learning and for feature selection for deep learning 
 2. **LSTM** – develop an LSTM model for each stock using the dataset from the first stage 
