@@ -1,0 +1,52 @@
+{
+"_note": "KEEP_THIS LINE FIRST",
+
+"data_directory"      : "data/",
+"notebooks_directory" : "notebooks/",
+"src_directory"       : "src/",
+"pickles_directory"   : "pickles/",
+"output_directory"    : "output/",
+
+"notebook1" : "1spotify_dataprep.ipynb",
+"notebook2" : "2spotify_eda.ipynb",
+"notebook3" : "3spotify_datacleansing.ipynb",
+"notebook4" : "4spotify_fe.ipynb",
+"notebook5" : "5spotify_models.ipynb",
+
+"output1"   : "output1.ipynb",
+"output2"   : "output2.ipynb",
+"output3"   : "output3.ipynb",
+"output4"   : "output4.ipynb",
+"output5"   : "output5.ipynb",
+
+"pickle1"            : "spotify_dataprep_clean.pkl",
+"pickle2"            : "spotify_eda_clean.pkl",
+"pickle3"            : "spotify_datacleansing_clean.pkl",
+"pickle4"            : "spotify_fe_clean.pkl",
+
+"pickle1_test"       : "spotify_dataprep_clean.pkl.test.pkl",
+"pickle2_test"       : "spotify_eda_clean.pkl.test.pkl",
+"pickle3_test"       : "spotify_datacleansing_clean.pkl.test.pkl",
+"pickle4_test"       : "spotify_fe_clean.pkl.test.pkl",
+
+"pickle_final_df"    : "spotify_final_df.pkl",
+"pickle_final_model" : "spotify_final_model.gbm.pkl",
+
+
+"chain_notebooks" : "1",
+"_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
+
+"split_df" : "1",
+"_note"    : "In case of 1, notbooks will process both df and df_test. Or only df, in case of 0" ,
+
+"outliers_alg" : "LOF",
+"_note"        : "options for outliers_alg: LOF ISO MAD Z_SCORE IQR DBSCAN",
+
+"imputer_alg" : "MICE",
+"_note"       : "options for imputer_alg: MICE KNN",
+
+"model_alg" : "GBM",
+"_note"     : "GBM, Linear Regression, Decision Tree, Random Forest, ADB, GBM, SVM, XGB",
+
+"_note": "KEEP THIS LINE LAST"
+}
