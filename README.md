@@ -1,6 +1,6 @@
 # 🎯 Deep Learning  Pipeline Project for time seroiues
 
-This repository contains a modular **deep learning of time seroiues** project, developed using YF stocks database.  
+This repository contains a modular **deep learning** project for **time seroiues**, developed using YF stocks datasets.  
 
 ---
 
