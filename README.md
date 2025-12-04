@@ -23,7 +23,6 @@ Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure
 {REPOSITORY_PATH}/
 │
 ├── data/
-│   ├── README.md                # Kaggle dataset description
 │   └── ProjectPresentation.pptx # Project presentation with visualizations
 │
 ├── notebooks/
