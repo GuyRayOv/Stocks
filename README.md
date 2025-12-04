@@ -63,8 +63,9 @@ Both subsets are processed independently throughout the pipeline. This behavior 
 
 ## 🚀 How to Run
 
-TBD
-
+1. **Clone** this repository to your local machine.
+2. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
+3. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
 ---
 
 ## 📊 Project Deliverables
