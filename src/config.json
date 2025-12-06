@@ -25,12 +25,8 @@
 "pickle3"            : "",
 "pickle4"            : "",
 
-"TKL" : "APL",
-
-  
 "pickle_final_df"    : "",
 "pickle_final_model" : "",
-
 
 "chain_notebooks" : "0",
 "_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
@@ -46,6 +42,12 @@
 
 "model_alg" : "",
 "_note"     : "",
+
+"TKL" : "AAPL",
+"_commnet": "stock to predict",
+
+"HISTORY_DEPTH": "650",
+"_commnet": "146 calendar days ~= 100 trade days",
 
 "_note": "KEEP THIS LINE LAST"
 }
