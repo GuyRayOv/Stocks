@@ -23,7 +23,8 @@ Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure
 {REPOSITORY_PATH}/
 │
 ├── data/
-│   └── ProjectPresentation.pptx # Project presentation with visualizations
+│   ├── <stock1>.df.csv #(e.g. aapl.df.csv)
+|   └── <stock2>.df.csv #(e.g. intlc.df.csv)
 │
 ├── notebooks/
 │   ├── 1stocks_dataprep_xgb.ipynb
