@@ -8,11 +8,12 @@ This repository contains a modular **deep learning** project for **time series**
 
 The project implements all major stages of a **deep learning pipeline of time series**, including:
 
-1. **Data Preparation** – loading, cleaning, structuring a stock price dataset for XGB learning and for feature selection for deep learning 
-2. **LSTM** – develop an LSTM model for each stock using the dataset from the first stage 
-3. **GRU** – develop a GRU model for each stock using the dataset from the first stage
-4. **Cascade LSTM GRU** – develop an hybrid model for each stock, starting with LSTM layers, followed by GRU layers
-5. **Parallel LSTM GRU** – develop an hybrid model for each stock, executing LSTM and GRU in parallel, selecting the best features for each stock
+1. **Data Preparation** – loading, cleaning, feature engineering, features selections a stock price dataset
+2. **XGB** – develop an XGB model for each stock using the dataset from the first stage 
+3. **LSTM** – develop an LSTM model for each stock using the dataset from the first stage 
+4. **GRU** – develop a GRU model for each stock using the dataset from the first stage
+5. **Cascade LSTM GRU** – develop an hybrid model for each stock, starting with LSTM layers, followed by GRU layers
+6. **Parallel LSTM GRU** – develop an hybrid model for each stock, executing LSTM and GRU in parallel, selecting the best features for each stock
 
 Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure modularity, clarity, and reproducibility.
 
@@ -23,15 +24,17 @@ Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure
 {REPOSITORY_PATH}/
 │
 ├── data/
-│   └── ProjectPresentation.pptx # Project presentation with visualizations
+│   ├── <stock1>.df.csv #(e.g. aapl.df.csv)
+|   └── <stock2>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
-│   ├── 1stocks_dataprep_xgb.ipynb
-│   ├── 2stocks_lstm.ipynb
-│   ├── 3stocks_gru.ipynb
-│   ├── 4stocks_cascade_lstm_gru.ipynb
-|   ├── 5stocks_parallel_lstm_gru.ipynb
-│   └── 6stocks_prediction.ipynb
+│   ├── stocks_dataprep.ipynb
+|   ├── stocks_xgb.ipynb
+│   ├── stocks_lstm.ipynb
+│   ├── stocks_gru.ipynb
+│   ├── stocks_cascade_lstm_gru.ipynb
+|   ├── stocks_parallel_lstm_gru.ipynb
+│   └── stocks_prediction.ipynb
 │
 ├── src/
 │   ├── config.json              # Global project configuration file
