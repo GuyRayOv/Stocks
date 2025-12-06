@@ -46,8 +46,8 @@
 "TKL" : "AAPL",
 "_commnet": "stock to predict",
 
-"HISTORY_DEPTH": "650",
-"_commnet": "146 calendar days ~= 100 trade days",
+"HISTORY_DEPTH": "7000",
+"_commnet": "365 calendar days equals 250 busienss days",
 
 "_note": "KEEP THIS LINE LAST"
 }
