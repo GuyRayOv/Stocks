@@ -27,12 +27,13 @@ Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure
 |   └── <stock2>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
-│   ├── 1stocks_dataprep_xgb.ipynb
-│   ├── 2stocks_lstm.ipynb
-│   ├── 3stocks_gru.ipynb
-│   ├── 4stocks_cascade_lstm_gru.ipynb
-|   ├── 5stocks_parallel_lstm_gru.ipynb
-│   └── 6stocks_prediction.ipynb
+│   ├── stocks_dataprep.ipynb
+|   ├── stocks_xgb.ipynb
+│   ├── stocks_lstm.ipynb
+│   ├── stocks_gru.ipynb
+│   ├── stocks_cascade_lstm_gru.ipynb
+|   ├── stocks_parallel_lstm_gru.ipynb
+│   └── stocks_prediction.ipynb
 │
 ├── src/
 │   ├── config.json              # Global project configuration file
