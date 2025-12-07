@@ -45,7 +45,7 @@ Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure
 │   └── __init__.py
 │
 ├── output/                      # Logs, results, and generated files
-├── pickles/                     # Serialized models and data
+├── pickles/                     # Serialized models and dataframes
 │
 |
 ├── README.md                    # Project documentation (this file)
