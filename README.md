@@ -25,7 +25,10 @@ Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure
 │
 ├── data/
 │   ├── <stock1>.df.csv #(e.g. aapl.df.csv)
-|   └── <stock2>.df.csv #(e.g. intc.df.csv)
+|   .
+|   .
+|   .
+|   └── <stockn>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
 │   ├── stocks_dataprep.ipynb
