@@ -43,8 +43,8 @@
 "model_alg" : "",
 "_note"     : "",
 
-"TKL" : "NVDA",   
-"_commnet": "stock to predict, options: AAPL,ATCMF, EOSE, NVDA, RVPH, TNYA",
+"TKL" : "TNYA",
+"_commnet": "stock to predict, options: AAPL,ATCMF, EOSE, NVDA, TNYA",
 
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
