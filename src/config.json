@@ -14,34 +14,11 @@
 "notebook5" : "5stocks_parallel_lstm_gru.ipynb",
 "notebook6" : "6stocks_prediction.ipynb",
 
-"output1"   : "",
-"output2"   : "",
-"output3"   : "",
-"output4"   : "",
-"output5"   : "",
-
-"pickle1"            : "",
-"pickle2"            : "",
-"pickle3"            : "",
-"pickle4"            : "",
-
-"pickle_final_df"    : "",
-"pickle_final_model" : "",
 
 "chain_notebooks" : "0",
 "_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
 
-"split_df" : "1",
-"_note"    : "In case of 1, notbooks will process both df and df_test. Or only df, in case of 0" ,
-
-"outliers_alg" : "",
-"_note"        : "",
-
-"imputer_alg" : "",
-"_note"       : "",
-
-"model_alg" : "",
-"_note"     : "",
+"dataprep.override_csv" : "1", 
 
 "TKL" : "TNYA",
 "_commnet": "stock to predict, options: AAPL,ATCMF, EOSE, NVDA, TNYA",
