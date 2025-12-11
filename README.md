@@ -42,7 +42,7 @@ Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure
 ├── src/
 │   ├── config.json              # Global project configuration file
 │   ├── my_project_utils.py      # Helper functions (shared across notebooks). For future use, currently empty
-│   └── __init__.py
+│   └──__init__.py
 │
 ├── output/                      # Logs, results, and generated files
 ├── pickles/                     # Serialized models and dataframes
