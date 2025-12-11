@@ -1,4 +1,4 @@
-# 🎯 Deep Learning  Pipeline Project for Time Series
+# 🎯 Deep Learning Pipeline Project for Time Series
 
 This repository contains a modular **deep learning** project for **time series**, developed using YF stocks datasets.  
 
@@ -8,7 +8,7 @@ This repository contains a modular **deep learning** project for **time series**
 
 The project implements all major stages of a **deep learning pipeline of time series**, including:
 
-1. **Data Preparation** – loading, cleaning, feature engineering, features selections a stock price dataset
+1. **Data Preparation** – loading time series from YF, cleaning, feature engineering, exhogens features, and features selection for a stock price dataset
 2. **XGB** – develop an XGB model for each stock using the dataset from the first stage 
 3. **LSTM** – develop an LSTM model for each stock using the dataset from the first stage 
 4. **GRU** – develop a GRU model for each stock using the dataset from the first stage
@@ -60,10 +60,7 @@ TBD
 ---
 
 ## 🧠 Data Leakage Prevention
-
-TBD
-
-Both subsets are processed independently throughout the pipeline. This behavior is controlled via the `split_df` flag in `config.json`.
+Seperate normalizaiton for the exhoges features and for target based time series features (rolling window etc)
 
 ---
 
