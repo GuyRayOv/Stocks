@@ -26,5 +26,9 @@
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
 
+
+"LOOK_BACK_DAYS" : "66",
+"TRAIN_BATCH_SIZE" : "22",
+
 "_note": "KEEP THIS LINE LAST"
 }
