@@ -20,7 +20,7 @@
 
 "dataprep.override_csv" : "1", 
 
-"TKL" : "EOSE",
+"TKL" : "AAPL",
 "_commnet": "stock to predict, options: AAPL,ATCMF, EOSE, NVDA, TNYA",
 
 "HISTORY_DEPTH": "7000",
