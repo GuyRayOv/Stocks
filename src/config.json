@@ -20,15 +20,16 @@
 
 "dataprep.override_csv" : "1", 
 
-"TKL" : "AAPL",
+"TKL" : "EOSE",
 "_commnet": "stock to predict, options: AAPL,ATCMF, EOSE, NVDA, TNYA",
 
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
 
 
-"LOOK_BACK_DAYS" : "66",
-"TRAIN_BATCH_SIZE" : "22",
+"LOOK_BACK_DAYS"    : "66",
+"TRAIN_BATCH_SIZE"  : "32",
+"TRAIN_EPOCS"        : "20",
 
 "_note": "KEEP THIS LINE LAST"
 }
