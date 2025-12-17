@@ -7,20 +7,26 @@
 "pickles_directory"   : "pickles/",
 "output_directory"    : "output/",
 
-"notebook1" : "1stocks_dataprep_xgb.ipynb",
-"notebook2" : "2stocks_lstm",
-"notebook3" : "3stocks_gru.ipynb",
+"notebook1" : "stocks_dataprep.ipynb",
+"notebook2" : "xgb.ipynb",
+"notebook3" : "racing_models.ipynb",
 "notebook4" : "4stocks_cascade_lstm_gru.ipynb",
 "notebook5" : "5stocks_parallel_lstm_gru.ipynb",
 "notebook6" : "6stocks_prediction.ipynb",
 
+"output1"   : "output1.ipynb",
+"output2"   : "output2.ipynb",
+"output3"   : "output3.ipynb",
+"output4"   : "output4.ipynb",
+"output5"   : "output5.ipynb",
 
-"chain_notebooks" : "0",
+
+"chain_notebooks" : "1",
 "_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
 
 "dataprep.override_csv" : "1", 
 
-"TKL" : "AAPL",
+"TKL" : "ATCMF",
 "_commnet": "stock to predict, options: AAPL,ATCMF, EOSE, NVDA, TNYA",
 
 "HISTORY_DEPTH": "7000",
