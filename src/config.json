@@ -26,16 +26,21 @@
 
 "dataprep.override_csv" : "1", 
 
-"TKL" : "INTC",
-"_commnet": "stock to predict, options: AAPL NVDA INTC TEVA TNYA",
+"RACING_MODELS" : "Parallel.LSTM.GRU Cascase.CNN.GRU GRU LSTM",
+
+"STOCKS"  : "AAPL NVDA INTC TEVA TNYA",
+"_commnet": "during boot, 'TKL' will be set to be STOCKS[0]",
+"TKL"     : "",
 
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
 
 
+
+
 "LOOK_BACK_DAYS"    : "66",
 "TRAIN_BATCH_SIZE"  : "32",
-"TRAIN_EPOCS"        : "20",
+"TRAIN_EPOCS"        : "15",
 
 "_note": "KEEP THIS LINE LAST"
 }
