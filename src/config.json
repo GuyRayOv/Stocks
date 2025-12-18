@@ -21,13 +21,13 @@
 "output5"   : "output5.ipynb",
 
 
-"chain_notebooks" : "1",
+"chain_notebooks" : "0",
 "_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
 
 "dataprep.override_csv" : "1", 
 
-"TKL" : "ATCMF",
-"_commnet": "stock to predict, options: AAPL,ATCMF, EOSE, NVDA, TNYA",
+"TKL" : "AAPL",
+"_commnet": "stock to predict, options: AAPL, NVDA, INTC TEVA",
 
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
