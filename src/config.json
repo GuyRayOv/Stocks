@@ -26,8 +26,8 @@
 
 "dataprep.override_csv" : "1", 
 
-"TKL" : "AAPL",
-"_commnet": "stock to predict, options: AAPL, NVDA, INTC TEVA",
+"TKL" : "INTC",
+"_commnet": "stock to predict, options: AAPL NVDA INTC TEVA TNYA",
 
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
