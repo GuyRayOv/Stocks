@@ -1,6 +1,6 @@
 # 🎯 Deep Learning Pipeline Project for Time Series
 
-This repository contains a modular **deep learning** project for **time series**, developed using YF stocks datasets.  
+This repository contains a modular **deep learning** project for **time series**, developed using YF's Stokcs datasets.  
 
 ---
 
@@ -27,7 +27,7 @@ The project implements all major stages of a **deep learning pipeline of time se
 |   └── <stockn>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
-│   ├── dataprep.ipynb          # Data prep and Feature recommandation  
+│   ├── dataprep.ipynb          # Data prep and feature recommendation  
 |   ├── racing_models.ipynb     # Select best MM and and X_feature 
 │   ├── predict_future.ipynb    # Using best NN and X_features to predict the ticker's future
 │   └── stocks.ipynb            # Running by order all notebooks
