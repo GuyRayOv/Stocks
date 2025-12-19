@@ -26,10 +26,10 @@ The project implements all major stages of a **deep learning pipeline of time se
 |   └── <stockn>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
-│   ├── [notebooks/dateprep.ipynb](notebooks/dataprep.ipynb) # Data prep and feature recommendation  
+│   ├── dataprep.ipynb          # Data prep and feature recommendation  
 |   ├── racing_models.ipynb     # Select best MM and and X_feature 
 │   ├── predict_future.ipynb    # Using best NN and X_features to predict the ticker's future
-│   └── stocks.ipynb            # Running by order all notebooks
+│   └── stocks.ipynb            # Running all notebooks by order 
 │
 ├── src/
 │   ├── config.json              # Global project configuration file
@@ -54,7 +54,7 @@ The project implements all major stages of a **deep learning pipeline of time se
 
 ## ⚙️ Notebook Workflow
 
-Data prep and Feature selection are implemented in **dataprep.ipynb** notebook to ensure modularity, clarity, and reproducibility.
+Data prep and feature selection are implemented in **dataprep.ipynb** notebook to ensure modularity, clarity, and reproducibility.
 Selecintg NN model and X_features are implementd in  **race_mmodels.ipynb** 
 Future prediciton is implemented in **predic_future.ipynb**
 
