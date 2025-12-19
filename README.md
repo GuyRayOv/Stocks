@@ -7,7 +7,6 @@ This repository contains a modular **deep learning** project for **time series**
 ## 📘 Project Overview
 
 The project implements all major stages of a **deep learning pipeline of time series**, including:
-
 1. **Data preparation** – Download ticker data + exhogen indexes (S&P, NASDAQ, Oil, Gold, RealEstate, Inflation) into a table of ~300 ts features
 2. **Feature recomandation** – Using ML/XGB to suggest 20 best features for each stock. Saving final table to a csv
 3. **Select best NN and X_features** – Testing LSTM, GRU, CNN and Mix-combinations with few combination of X_features against the csv file
@@ -26,7 +25,7 @@ The project implements all major stages of a **deep learning pipeline of time se
 |   └── <stockn>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
-│   ├── dataprep.ipynb          # Data prep and feature recommendation  
+│   ├── dataprep.ipynb          # Data prep and feature recommendation  [dataprep.ipynb](notebooks/dataprep.ipynb)
 |   ├── racing_models.ipynb     # Select best MM and and X_feature 
 │   ├── predict_future.ipynb    # Using best NN and X_features to predict the ticker's future
 │   └── stocks.ipynb            # Running all notebooks by order 
