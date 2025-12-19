@@ -7,19 +7,13 @@
 "pickles_directory"   : "pickles/",
 "output_directory"    : "output/",
 
-"notebook1" : "stocks_dataprep.ipynb",
-"notebook2" : "xgb.ipynb",
-"notebook3" : "racing_models.ipynb",
-"notebook4" : "4stocks_cascade_lstm_gru.ipynb",
-"notebook5" : "5stocks_parallel_lstm_gru.ipynb",
-"notebook6" : "6stocks_prediction.ipynb",
+"notebook1" : "dataprep.ipynb",
+"notebook2" : "race_models.ipynb",
+"notebook3" : "predict_future.ipynb",
 
-"output1"   : "output1.ipynb",
-"output2"   : "output2.ipynb",
-"output3"   : "output3.ipynb",
-"output4"   : "output4.ipynb",
-"output5"   : "output5.ipynb",
-
+"output1"   : "dataprep_output.ipynb",
+"output2"   : "race_models_output.ipynb",
+"output3"   : "predict_future_output.ipynb",
 
 "chain_notebooks" : "0",
 "_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
@@ -30,7 +24,7 @@
 
 "STOCKS"  : "AAPL NVDA INTC TEVA TNYA",
 "_commnet": "during boot, 'TKL' will be set to be STOCKS[0]",
-"TKL"     : "",
+"TKL"     : "AAPL",
 
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
