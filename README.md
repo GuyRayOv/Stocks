@@ -58,7 +58,7 @@ TBD
 ---
 
 ## 🧠 Data Leakage Prevention
-Seperate normalizaiton for the exhoges features and for target based time series features (rolling window etc)
+We used seperate normalizaition/scalers for the y and for X
 
 ---
 
