@@ -1,6 +1,6 @@
 # 🎯 Deep Learning Pipeline Project for Time Series
 
-This repository contains a modular **deep learning** project for **time series**, developed using YF's Stokcs datasets.  
+This repository contains a modular **deep learning** project of **time series**, developed using YF's Stokcs datasets.  
 
 ---
 
