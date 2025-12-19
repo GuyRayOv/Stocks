@@ -18,7 +18,7 @@ The project implements all major stages of a **deep learning pipeline of time se
 ```
 {REPOSITORY_PATH}/
 │
-├── data/
+├── data/                        # TS dataset of TKL, exhogen indexs, and ~20 XGB-recommended feaures  [dataprep.ipynb](notebooks/dataprep.ipynb)
 │   ├── <stock1>.df.csv #(e.g. aapl.df.csv)
 |   .
 |   .
