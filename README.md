@@ -15,7 +15,9 @@ The project implements all major stages of a **deep learning pipeline of time se
 5. **Prediction** – Using best MM model and best features (selecetd by the next NN model) to predict next few days for the TKL
 
 Stages 1-2 implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure modularity, clarity, and reproducibility.
+
 Stages 3-4 are also in a dedicated **Jupyter notebook (.ipynb)**
+
 Stage  5 in a dedicated  **Jupyter notebook (.ipynb)**
 
 ---
