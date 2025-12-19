@@ -35,7 +35,8 @@ Stage  5 in a dedicated  **Jupyter notebook (.ipynb)**
 ├── notebooks/
 │   ├── dataprep.ipynb
 |   ├── racing_models.ipynb
-│   ├── future_prediction.ipynb
+│   ├── predict_future.ipynb
+│   └──stocks.ipynb
 │
 ├── src/
 │   ├── config.json              # Global project configuration file
