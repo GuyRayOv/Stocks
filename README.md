@@ -68,9 +68,13 @@ We used seperate normalizaition/scalers for the y and for X
 
 ## 🚀 How to Run
 
-1. **Clone** this repository to your local machine.
-2. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
-3. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
+1. **Clone** this repository to your local machine
+2. In config.json define the target TKL, list of MM models, and other run parameters 
+3. Open notebooks/stokcs.ipynb for a full execution, or any notebook for a partial run
+4. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
+5. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
+6. Click Run All
+
 ---
 
 ## 📊 Project Deliverables
