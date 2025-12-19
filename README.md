@@ -19,10 +19,10 @@ The project implements all major stages of a **deep learning pipeline of time se
 {REPOSITORY_PATH}/
 │
 ├── data/                        # TS dataset of TKL, exhogen indexs, and ~20 XGB-recommended feaures  [dataprep.ipynb](notebooks/dataprep.ipynb)
-│   ├── <stock1>.df.csv #(e.g. aapl.df.csv)
+│   ├── <stock1>.df.csv
 |   .
 |   .
-|   └── <stockn>.df.csv #(e.g. intc.df.csv)
+|   └── <stockn>.df.csv
 │
 ├── notebooks/
 │   ├── dataprep.ipynb          # Data prep and feature recommendation
@@ -43,7 +43,6 @@ The project implements all major stages of a **deep learning pipeline of time se
 |   .
 |   .
 |   └── <stockn>.best_model_named,X_features.keras
-│
 |
 ├── README.md                    # Project documentation (this file)
 └── .gitignore                   # Ignored files and folders
@@ -67,5 +66,8 @@ We used seperate normalizaition/scaler for y and for X
 
 ## 📊 Project Deliverables
 
-TBD
+1. data/*.csv:  a ts dataset each stock, with its ~20 recomanded X_features. Input for the train
+2. pickels/*.pkl: a ts dataset for each stock with its ~20 recomanded X_features. Input for the prediciton
+3. pickles/*.keras: a best model file for each stock. Input for the prediction
+4. images/*.png: image graph files for each stock. Input for fastai
 ---
