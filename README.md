@@ -13,7 +13,6 @@ The project implements all major stages of a **deep learning pipeline of time se
 3. **Select best NN and X_features** – Testing LSTM, GRU, CNN and Mix-combinations with few combination of X_features against the csv file
 4. **Future prediction** – Using best MM and X_features to predict the next few days of the TKL
 
-[notebooks/1spotify_dataprep.ipynb](notebooks/1spotify_dataprep.ipynb)
 ---
 
 🧩 Project Structure
@@ -27,7 +26,7 @@ The project implements all major stages of a **deep learning pipeline of time se
 |   └── <stockn>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
-│   ├── dataprep.ipynb          # Data prep and feature recommendation  
+│   ├── [notebooks/dateprep.ipynb](notebooks/dataprep.ipynb) # Data prep and feature recommendation  
 |   ├── racing_models.ipynb     # Select best MM and and X_feature 
 │   ├── predict_future.ipynb    # Using best NN and X_features to predict the ticker's future
 │   └── stocks.ipynb            # Running by order all notebooks
