@@ -8,14 +8,17 @@ This repository contains a modular **deep learning** project for **time series**
 
 The project implements all major stages of a **deep learning pipeline of time series**, including:
 
-1. **Data Preparation** – loading time series from YF, cleaning, feature engineering, exhogens features, and features selection for a stock price dataset
-2. **XGB** – develop an XGB model for each stock using the dataset from the first stage 
-3. **LSTM** – develop an LSTM model for each stock using the dataset from the first stage 
-4. **GRU** – develop a GRU model for each stock using the dataset from the first stage
-5. **Cascade LSTM GRU** – develop an hybrid model for each stock, starting with LSTM layers, followed by GRU layers
-6. **Parallel LSTM CNN** – develop an hybrid model for each stock, executing LSTM and CNN in parallel, selecting the best features for each stock
+1. **Data Preparation** – Download a TKL from YF + Exhogen indexes, data prep as time series table for ML/XGB (total of ~300 features)
+2. **Feature Selection** – Using ML/XGB model to select best 20 features for each stock. Saving the 
+3. **Racing NN models** – Testing LSTM, GRU, CNN and Mix-combinations of the three model.
+4. **Best features for the NN** - Each MM model is tested for: 1) all features selected bu XGB 2) only exhogen features 3) only the TKL data
+5. **Prediction** – Using best MM model and best features (selecetd by the next NN model) to predict next few days for the TKL
 
-Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure modularity, clarity, and reproducibility.
+Stages 1-2 implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure modularity, clarity, and reproducibility.
+
+Stages 3-4 are also in a dedicated **Jupyter notebook (.ipynb)**
+
+Stage  5 in a dedicated  **Jupyter notebook (.ipynb)**
 
 ---
 
@@ -27,17 +30,12 @@ Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure
 │   ├── <stock1>.df.csv #(e.g. aapl.df.csv)
 |   .
 |   .
-|   .
 |   └── <stockn>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
-│   ├── stocks_dataprep.ipynb
-|   ├── stocks_xgb.ipynb
-│   ├── stocks_lstm.ipynb
-│   ├── stocks_gru.ipynb
-│   ├── stocks_cascade_lstm_gru.ipynb
-|   ├── stocks_parallel_lstm_gru.ipynb
-│   └── stocks_prediction.ipynb
+│   ├── dataprep.ipynb
+|   ├── racing_models.ipynb
+│   ├── future_prediction.ipynb
 │
 ├── src/
 │   ├── config.json              # Global project configuration file
@@ -60,7 +58,7 @@ TBD
 ---
 
 ## 🧠 Data Leakage Prevention
-Seperate normalizaiton for the exhoges features and for target based time series features (rolling window etc)
+We used seperate normalizaition/scalers for the y and for X
 
 ---
 
