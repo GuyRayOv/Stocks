@@ -28,7 +28,7 @@ The project implements all major stages of a **deep learning pipeline of time se
 │   ├── dataprep.ipynb          # Data prep and feature recommendation  [dataprep.ipynb](notebooks/dataprep.ipynb)
 |   ├── racing_models.ipynb     # Select best MM and and X_feature 
 │   ├── predict_future.ipynb    # Using best NN and X_features to predict the ticker's future
-│   └── stocks.ipynb            # Running all notebooks by order 
+│   └──[stocks.ipynb](notebooks/stocks.ipynb)         # Running all notebooks by order 
 │
 ├── src/
 │   ├── config.json              # Global project configuration file
@@ -57,8 +57,8 @@ We used seperate normalizaition/scalers for the y and for X
 ## 🚀 How to Run
 
 1. **Clone** this repository to your local machine
-2. In [config.json](src/config.json) define the target TKL, list of MM models, and other run parameters 
-3. Open notebooks/stocks.ipynb for a full execution, or any notebook for a partial run
+2. In [config.json](src/config.json) define your target TKL, your list of MM models, and other run parameters 
+3. Open [stocks.ipynb](notebooks/stocks.ipynb) for a full execution, or any notebook for a partial run
 4. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
 5. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
 6. Click Run All
