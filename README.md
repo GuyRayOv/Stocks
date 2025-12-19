@@ -8,12 +8,10 @@ This repository contains a modular **deep learning** project for **time series**
 
 The project implements all major stages of a **deep learning pipeline of time series**, including:
 
-1. **Data Preparation** – loading time series from YF, cleaning, feature engineering, exhogens features, and features selection for a stock price dataset
-2. **XGB** – develop an XGB model for each stock using the dataset from the first stage 
-3. **LSTM** – develop an LSTM model for each stock using the dataset from the first stage 
-4. **GRU** – develop a GRU model for each stock using the dataset from the first stage
-5. **Cascade LSTM GRU** – develop an hybrid model for each stock, starting with LSTM layers, followed by GRU layers
-6. **Parallel LSTM CNN** – develop an hybrid model for each stock, executing LSTM and CNN in parallel, selecting the best features for each stock
+1. **Data Preparation** – Download a TKL from YF + Exhogen indexes, data prep as time series table for ML/XGB (total of ~300 features)
+2. **Feature Selection** – Using ML/XGB model to select best 20 features for each stock. Saving the 
+3. **Racing NN models** – Testing LSTM, GRU, CNN and Mix-combinations of the three model. Each model is tested for: 1) all features selected bu XGB 2) only exhogen features 3) only the TKL data
+4. **Prediction** – Using best MM model and best features (selecetd by the next NN model) to predict next few days for the TKL
 
 Each stage is implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure modularity, clarity, and reproducibility.
 
