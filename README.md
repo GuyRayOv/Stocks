@@ -8,17 +8,18 @@ This repository contains a modular **deep learning** project for **time series**
 
 The project implements all major stages of a **deep learning pipeline of time series**, including:
 
-1. **Data Preparation** – Download a TKL from YF + Exhogen indexes, data prep as time series table for ML/XGB (total of ~300 features)
-2. **Feature Selection** – Using ML/XGB model to select best 20 features for each stock. Saving the 
-3. **Racing NN models** – Testing LSTM, GRU, CNN and Mix-combinations of the three model.
-4. **Best features for the NN** - Each MM model is tested for: 1) all features selected bu XGB 2) only exhogen features 3) only the TKL data
-5. **Prediction** – Using best MM model and best features (selecetd by the next NN model) to predict next few days for the TKL
+1. **Data preparation** – Download a TKL (defined in src/config.json) from YF + Exhogen indexes. Format as a time series table for ML/XGB (total of some 300 features)
+2. **Feature selection** – Using ML/XGB model to select best 20 features for each stock. Saving final table to a csv
+3. **Select best NN model** – Testing LSTM, GRU, CNN and Mix-combinations of the three model agains the csv file
+4. **Select best features for the NN** - Each MM is tested for 1) all features selected by XGB 2) Exhogen only features 3) TKL only data
+5. **Future prediction** – Using best MM and X_features to predict the next few days of the TKL
 
 Stages 1-2 implemented in a dedicated **Jupyter notebook (.ipynb)** to ensure modularity, clarity, and reproducibility.
 
 Stages 3-4 are also in a dedicated **Jupyter notebook (.ipynb)**
 
 Stage  5 in a dedicated  **Jupyter notebook (.ipynb)**
+
 
 ---
 
