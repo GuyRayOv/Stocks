@@ -8,9 +8,9 @@ This repository contains a modular **deep learning** project for **time series**
 
 The project implements all major stages of a **deep learning pipeline of time series**, including:
 
-1. **Data preparation** – Download a TKL from YF + Exhogen indexes. Format as a table with some some 300 TS features
-2. **Feature recomandation** – Using ML/XGB to recommand best 20 features for each stock. Saving final table to a csv
-3. **Select best NN and X_features** – Testing LSTM, GRU, CNN and Mix-combinations agains combination of X_features from the csv file
+1. **Data preparation** – Download ticker data + exhogen indexes (S&P, NASDAQ, Oil, Gold, RealEstate, Inflation). Format as a table with some some 300 TS features
+2. **Feature recomandation** – Using ML/XGB to suggest 20 best features for each stock. Saving final table to a csv
+3. **Select best NN and X_features** – Testing LSTM, GRU, CNN and Mix-combinations with few combination of X_features against the csv file
 4. **Future prediction** – Using best MM and X_features to predict the next few days of the TKL
 
 ---
@@ -26,10 +26,10 @@ The project implements all major stages of a **deep learning pipeline of time se
 |   └── <stockn>.df.csv #(e.g. intc.df.csv)
 │
 ├── notebooks/
-│   ├── dataprep.ipynb          # Data prep and Feature recomandation  
-|   ├── racing_models.ipynb     # MM and and X_feature selection 
-│   ├── predict_future.ipynb    # Using best NN and X_features to predict TKL's future
-│   └── stocks.ipynb            # Running by order all three notebooks 
+│   ├── dataprep.ipynb          # Data prep and Feature recommandation  
+|   ├── racing_models.ipynb     # Select best MM and and X_feature 
+│   ├── predict_future.ipynb    # Using best NN and X_features to predict the ticker's future
+│   └── stocks.ipynb            # Running by order all notebooks
 │
 ├── src/
 │   ├── config.json              # Global project configuration file
@@ -37,7 +37,8 @@ The project implements all major stages of a **deep learning pipeline of time se
 │   └──__init__.py
 │
 ├── images/                      # images of tkl graphs (to be used by fastai)
-├── output/                      # Logs, results, and generated files
+├── output/                      # Logs, results, and generated file
+│
 ├── pickles/                     # Serialized models and dataframes
 |   ├── <stock1>.best_model_name.X_features.keras
 |   .
