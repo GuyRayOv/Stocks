@@ -23,9 +23,9 @@
 
 "RACING_MODELS" : "Parallel.LSTM.GRU Cascase.CNN.GRU GRU LSTM",
 
-"STOCKS"  : "AAPL",
+"STOCKS"  : "TEVA",
 "_commnet": "during boot, 'TKL' will be set to be STOCKS[0] NVDA INTC TEVA TNYA",
-"TKL"     : "AAPL",
+"TKL"     : "TEVA",
 
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
