@@ -1,15 +1,15 @@
-# 🎯 Deep Learning Pipeline Project for Time Series
+# 🎯 Deep Learning study project for Time Series dataset
 
-This repository contains a modular **deep learning** project of **time series**, developed using YF's Stokcs datasets.  
+This repository contains a modular **deep learning** project of **time series**, developed using YF'database  
 
 ---
 
 ## 📘 Project Overview
 
-The project implements all major stages of a **deep learning pipeline of time series**, including:
-1. **Data preparation:** a ticker and exhogen indexes (S&P, NASDAQ, Oil, Gold, RealEstate, Inflation) formated a ts table of ~300 features
-2. **Feature recomandation:** Using ML/XGB to suggest 20 best features for each stock. Saving final table as a csv
-3. **Select NN and its X_features:** Testing LSTM, GRU, CNN and Mix-combinations with few options of X_features against the csv file
+The project implements major stages of a deep learning pipeline of time series dataset, including:
+1. **Data preparation:** a ticker + exhogen indexes (S&P, NASDAQ, Oil, Gold, RealEstate, Inflation) are formated a ts table of ~300 features
+2. **Feature recomandation:** Using ML/XGB to "suggest" best 20 features for each stock, saving the result table as a csv
+3. **Select NN and its X_features:** Testing LSTM, GRU, CNN and mixed combinations with several options of X_features from the csv file
 4. **Future prediction** – Using best MM and X_features to predict the next few days of the TKL
 
 ---
@@ -49,18 +49,18 @@ The project implements all major stages of a **deep learning pipeline of time se
 ```
 
 ## 🧠 Data Leakage Prevention
-We used seperate normalizaition/scaler for y and for X
+Seperate normalizaition/scaler for y and for X, where used to avoid data leakage
 
 ---
 
 ## 🚀 How to Run
 
 1. **Clone** this repository to your local machine
-2. In [config.json](src/config.json) define your target TKL, your list of MM models, and other run parameters 
-3. Open [stocks.ipynb](notebooks/stocks.ipynb) for a full execution, or any notebook for a partial run
-4. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
+2. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
 5. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
-6. Click Run All
+3. In [config.json](src/config.json) define your target TKL, your list of MM models, and other run parameters 
+4. Open [stocks.ipynb](notebooks/stocks.ipynb) for a full execution, or any notebook for a partial run
+5. Click Run All
 
 ---
 
