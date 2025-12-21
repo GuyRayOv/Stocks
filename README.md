@@ -25,10 +25,12 @@ The project implements major stages of a deep learning pipeline for time series 
 |   └── <stockn>.df.csv
 │
 ├── notebooks/
-│   ├── dataprep.ipynb          # Data prep and feature recommendation
-|   ├── racing_models.ipynb     # Select best MM and and X_feature 
-│   ├── predict_future.ipynb    # Using best NN and X_features to predict the ticker's future
-│   └── stocks.ipynb            # Running all notebooks by order 
+│   ├── dataprep_for_train.ipynb      # Data prep and feature recommendation
+|   ├── train_models.ipynb            # Select best MM and and X_feature
+|   ├── train.ipynb                   # Runing first two notebooks
+|   ├── dataprep_for_inference.ipynb  # Refresh dataset with the latest YF infromation
+│   ├── predict_future.ipynb          # Using best NN and X_features to predict ticker's future
+│   └── predict.ipynb                 # Running the last two notebooks
 │
 ├── src/
 │   ├── config.json              # Global project configuration file
@@ -54,8 +56,9 @@ The project implements major stages of a deep learning pipeline for time series 
 2. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
 5. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
 3. In [config.json](src/config.json) define your target TKL, your list of MM models, and other run parameters 
-4. Open [stocks.ipynb](notebooks/stocks.ipynb) for a full execution, or any notebook for a partial run
-5. Click Run All
+4. Open [train.ipynb](notebooks/train.ipynb) to generate best model for the TKL, **or**
+5. Open [predict.ipynb](notebooks/predict.ipynb) to future prediciton for the TKL
+6. Click Run All
 
 ---
 
