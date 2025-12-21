@@ -37,17 +37,17 @@ The project implements major stages of a deep learning pipeline for time series 
 │   ├── my_project_utils.py           # Helper functions (shared across notebooks). For future use, currently empty
 │   └──__init__.py
 │
-├── images/                          # images of tkl graphs (to be used by fastai)
-├── output/                          # Logs, results, and generated file
+├── images/                           # images of tkl graphs (to be used by fastai)
+├── output/                           # Logs, results, and generated file
 │
-├── pickles/                         # Serialized models and dataframes
+├── pickles/                          # Serialized models and dataframes
 |   ├── <stock1>.best_model_name.X_features.keras
 |   .
 |   .
 |   └── <stockn>.best_model_named,X_features.keras
 |
-├── README.md                        # Project documentation (this file)
-└── .gitignore                       # Ignored files and folders
+├── README.md                         # Project documentation (this file)
+└── .gitignore                        # Ignored files and folders
 ```
 
 ## 🚀 How to Run
@@ -56,7 +56,7 @@ The project implements major stages of a deep learning pipeline for time series 
 2. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
 5. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
 3. In [config.json](src/config.json) define your target TKL, your list of MM models, and other run parameters 
-4. Open [train.ipynb](notebooks/train.ipynb) to generate best model for the TKL, **or**
+4. Open [train.ipynb](notebooks/train.ipynb) to generate best model for the TKL, **OR**
 5. Open [predict.ipynb](notebooks/predict.ipynb) to future prediciton for the TKL
 6. Click Run All
 
