@@ -8,13 +8,17 @@
 "images_directory"    : "images/",
 "output_directory"    : "output/",
 
-"notebook1" : "dataprep.ipynb",
-"notebook2" : "race_models.ipynb",
-"notebook3" : "predict_future.ipynb",
+"notebook1" : "dataprep_for_train.ipynb",
+"notebook2" : "train_models.ipynb",
+"notebook3" : "dataprep_for_inference.ipynb",
+"notebook4" : "predict_future.ipynb",
 
-"output1"   : "dataprep_output.ipynb",
+
+"output1"   : "dataprep_for_train_output.ipynb",
 "output2"   : "race_models_output.ipynb",
-"output3"   : "predict_future_output.ipynb",
+"output3"   : "dataprep_for_inference_output.ipynb",
+"output4"   : "predict_future_output.ipynb",
+
 
 "chain_notebooks" : "0",
 "_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
@@ -23,9 +27,9 @@
 
 "RACING_MODELS" : "XGBoost Parallel.LSTM.GRU Cascase.CNN.GRU GRU LSTM",
 
-"STOCKS"  : "AAPL",
+"STOCKS"  : "NVDA", 
 "_commnet": "during boot, 'TKL' will be set to be STOCKS[0] NVDA INTC TEVA TNYA",
-"TKL"     : "AAPL",
+"TKL"     : "NVDA",
 
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
