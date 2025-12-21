@@ -18,7 +18,7 @@ The project implements major stages of a deep learning pipeline for time series 
 ```
 {REPOSITORY_PATH}/
 │
-├── data/                        # TS dataset for each TKL, incouding exhogen indexs and ~20 XGB-recommended feaures
+├── data/                             # TS dataset for each TKL, incouding exhogen indexs and ~20 XGB-recommended feaures
 │   ├── <stock1>.df.csv
 |   .
 |   .
