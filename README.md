@@ -33,21 +33,21 @@ The project implements major stages of a deep learning pipeline for time series 
 │   └── predict.ipynb                 # Running the last two notebooks
 │
 ├── src/
-│   ├── config.json              # Global project configuration file
-│   ├── my_project_utils.py      # Helper functions (shared across notebooks). For future use, currently empty
+│   ├── config.json                  # Global project configuration file
+│   ├── my_project_utils.py          # Helper functions (shared across notebooks). For future use, currently empty
 │   └──__init__.py
 │
-├── images/                      # images of tkl graphs (to be used by fastai)
-├── output/                      # Logs, results, and generated file
+├── images/                          # images of tkl graphs (to be used by fastai)
+├── output/                          # Logs, results, and generated file
 │
-├── pickles/                     # Serialized models and dataframes
+├── pickles/                         # Serialized models and dataframes
 |   ├── <stock1>.best_model_name.X_features.keras
 |   .
 |   .
 |   └── <stockn>.best_model_named,X_features.keras
 |
-├── README.md                    # Project documentation (this file)
-└── .gitignore                   # Ignored files and folders
+├── README.md                        # Project documentation (this file)
+└── .gitignore                       # Ignored files and folders
 ```
 
 ## 🚀 How to Run
