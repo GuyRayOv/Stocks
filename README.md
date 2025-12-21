@@ -33,8 +33,8 @@ The project implements major stages of a deep learning pipeline for time series 
 │   └── predict.ipynb                 # Running the last two notebooks
 │
 ├── src/
-│   ├── config.json                  # Global project configuration file
-│   ├── my_project_utils.py          # Helper functions (shared across notebooks). For future use, currently empty
+│   ├── config.json                   # Global project configuration file
+│   ├── my_project_utils.py           # Helper functions (shared across notebooks). For future use, currently empty
 │   └──__init__.py
 │
 ├── images/                          # images of tkl graphs (to be used by fastai)
