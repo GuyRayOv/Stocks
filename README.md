@@ -7,7 +7,7 @@ This repository contains a modular **deep learning** project of **time series**,
 ## 📘 Project Overview
 
 The project implements major stages of a deep learning pipeline for time series dataset, including:
-1. **Preparation:** Build TS datatable for a ticker + exhogen indexes (S&P, NASDAQ, Oil, Gold, RealEstate, Inflation) wiht some 300 "rolling" features (lag, min, max, std, diff, pct, etc)
+1. **Preparation:** Build historical table for a ticker + exhogen indexes (S&P, NASDAQ, Oil, Gold, RealEstate, Inflation) with some 300 "rolling" features (lag, min, max, std, diff, pct, etc)
 2. **Feature recomandation:** Using ML/XGB to "suggest" best 20 features for each stock
 3. **Select NN and X_features:** Testing LSTM, GRU, CNN and mixed combinations with several subsets of features from XGB's recommendation 
 4. **Future prediction** – Using best MM and X_features to predict the next few days of the TKL
