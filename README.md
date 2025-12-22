@@ -26,6 +26,7 @@ The project implements major stages of a deep learning pipeline for time series 
 │
 ├── notebooks/
 │   ├── dataprep_for_train.ipynb      # Data prep and feature recommendation
+│   ├── imagesprep_for_train.ipynb    # Images of graphs of the data
 |   ├── train_models.ipynb            # Select best MM and and X_feature
 |   ├── train.ipynb                   # Runing first two notebooks
 |   ├── dataprep_for_inference.ipynb  # Refresh dataset with the latest YF infromation
