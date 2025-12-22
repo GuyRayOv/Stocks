@@ -18,34 +18,36 @@ The project implements major stages of a deep learning pipeline for time series 
 ```
 {REPOSITORY_PATH}/
 │
-├── data/                        # TS dataset for each TKL, incouding exhogen indexs and ~20 XGB-recommended feaures
+├── data/                             # TS dataset for each TKL, incouding exhogen indexs and ~20 XGB-recommended feaures
 │   ├── <stock1>.df.csv
 |   .
 |   .
 |   └── <stockn>.df.csv
 │
 ├── notebooks/
-│   ├── dataprep.ipynb          # Data prep and feature recommendation
-|   ├── racing_models.ipynb     # Select best MM and and X_feature 
-│   ├── predict_future.ipynb    # Using best NN and X_features to predict the ticker's future
-│   └── stocks.ipynb            # Running all notebooks by order 
+│   ├── dataprep_for_train.ipynb      # Data prep and feature recommendation
+|   ├── train_models.ipynb            # Select best MM and and X_feature
+|   ├── train.ipynb                   # Runing first two notebooks
+|   ├── dataprep_for_inference.ipynb  # Refresh dataset with the latest YF infromation
+│   ├── predict_future.ipynb          # Using best NN and X_features to predict ticker's future
+│   └── predict.ipynb                 # Running the last two notebooks
 │
 ├── src/
-│   ├── config.json              # Global project configuration file
-│   ├── my_project_utils.py      # Helper functions (shared across notebooks). For future use, currently empty
+│   ├── config.json                   # Global project configuration file
+│   ├── my_project_utils.py           # Helper functions (shared across notebooks). For future use, currently empty
 │   └──__init__.py
 │
-├── images/                      # images of tkl graphs (to be used by fastai)
-├── output/                      # Logs, results, and generated file
+├── images/                           # images of tkl graphs (to be used by fastai)
+├── output/                           # Logs, results, and generated file
 │
-├── pickles/                     # Serialized models and dataframes
+├── pickles/                          # Serialized models and dataframes
 |   ├── <stock1>.best_model_name.X_features.keras
 |   .
 |   .
 |   └── <stockn>.best_model_named,X_features.keras
 |
-├── README.md                    # Project documentation (this file)
-└── .gitignore                   # Ignored files and folders
+├── README.md                         # Project documentation (this file)
+└── .gitignore                        # Ignored files and folders
 ```
 
 ## 🚀 How to Run
@@ -54,8 +56,9 @@ The project implements major stages of a deep learning pipeline for time series 
 2. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
 5. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
 3. In [config.json](src/config.json) define your target TKL, your list of MM models, and other run parameters 
-4. Open [stocks.ipynb](notebooks/stocks.ipynb) for a full execution, or any notebook for a partial run
-5. Click Run All
+4. Open [train.ipynb](notebooks/train.ipynb) to train the best model for the TKL, **OR**
+5. Open [predict.ipynb](notebooks/predict.ipynb) to predict the future of this TKL
+6. Click Run All
 
 ---
 
