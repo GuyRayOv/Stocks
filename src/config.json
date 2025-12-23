@@ -12,7 +12,9 @@
 "notebook2" : "train_models.ipynb",
 "notebook3" : "dataprep_for_inference.ipynb",
 "notebook4" : "predict_future.ipynb",
-"notebook5" : "imagesprep_for_train.ipynb",
+"notebook5" : "imagesprep_for_fastai.ipynb",
+"notebook6" : "train_fastai.ipynb",
+
 
 
 
@@ -20,7 +22,8 @@
 "output2"   : "race_models_output.ipynb",
 "output3"   : "dataprep_for_inference_output.ipynb",
 "output4"   : "predict_future_output.ipynb",
-"output5"   : "imagesprep_for_train_output.ipynb",
+"output5"   : "imagesprep_for_fastai_output.ipynb",
+"output6"   : "train_fastai_output.ipynb",
 
   
 
