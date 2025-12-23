@@ -15,9 +15,6 @@
 "notebook5" : "imagesprep_for_fastai.ipynb",
 "notebook6" : "train_fastai.ipynb",
 
-
-
-
 "output1"   : "dataprep_for_train_output.ipynb",
 "output2"   : "race_models_output.ipynb",
 "output3"   : "dataprep_for_inference_output.ipynb",
@@ -26,8 +23,6 @@
 "output6"   : "train_fastai_output.ipynb",
 
   
-
-
 "chain_notebooks" : "0",
 "_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
 
@@ -42,12 +37,18 @@
 "HISTORY_DEPTH": "7000",
 "_commnet": "365 calendar days equals 250 busienss days",
 
-
-
-
 "LOOK_BACK_DAYS"    : "66",
 "TRAIN_BATCH_SIZE"  : "32",
-"TRAIN_EPOCS"        : "15",
+"TRAIN_EPOCS"        : "20",
+
+"FASTAI.STEP_DAYS"    : "5",
+"FASTAI.WINDOW_DAYS"  : "260",
+"FASTAI.FUTURE_DAYS"  : "22",
+
+"FASTAI.BUY_TH"  : "0.15",
+"FASTAI.SELL_TH"  : "-0.10",
+
+
 
 "_note": "KEEP THIS LINE LAST"
 }
