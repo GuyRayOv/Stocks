@@ -58,7 +58,7 @@ The project implements major stages of a deep learning pipeline for time series 
 2. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
 5. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
 6. In `.env` define your Google API key i.e `GOOGLE_API_KEY=apikey`
-3. In [config.json](src/config.json) define your target TKL, your list of MM models, and other run parameters 
+3. In [config.json](src/config.json) define your target TKL and other run parameters 
 4. Open [train.ipynb](notebooks/train.ipynb) to train the best model for the TKL, **OR**
 5. Open [predict.ipynb](notebooks/predict.ipynb) to predict the future of this TKL
 6. Click Run All
