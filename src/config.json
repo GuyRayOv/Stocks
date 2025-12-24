@@ -1,57 +1,41 @@
 {
-"_note": "KEEP_THIS LINE FIRST",
-
-"data_directory"      : "data/",
-"notebooks_directory" : "notebooks/",
-"src_directory"       : "src/",
-"pickles_directory"   : "pickles/",
-"images_directory"    : "images/",
-"output_directory"    : "output/",
-
-"notebook1" : "dataprep_for_train.ipynb",
-"notebook2" : "train_models.ipynb",
-"notebook3" : "dataprep_for_inference.ipynb",
-"notebook4" : "predict_future.ipynb",
-"notebook5" : "imagesprep_for_fastai.ipynb",
-"notebook6" : "train_fastai.ipynb",
-"notebook7" : "recommand_investment_strategy.ipynb",
-
-
-"output1"   : "dataprep_for_train_output.ipynb",
-"output2"   : "train_models_output.ipynb",
-"output3"   : "dataprep_for_inference_output.ipynb",
-"output4"   : "predict_future_output.ipynb",
-"output5"   : "imagesprep_for_fastai_output.ipynb",
-"output6"   : "train_fastai_output.ipynb",
-"output7"   : "recommand_investment_strategy_output.ipynb",
-
-  
-"chain_notebooks" : "0",
-"_note"           : "In case of 1, each notbook (N) will execute notebook N-1 before running. Or only itself, in case on 0" ,
-
-"dataprep.override_csv" : "1", 
-
-"RACING_MODELS" : "XGBoost Parallel.LSTM.GRU Cascase.CNN.GRU GRU LSTM",
-
-"STOCKS"  : "NVDA", 
-"_commnet": "during boot, 'TKL' will be set to be STOCKS[0] NVDA INTC TEVA TNYA",
-"TKL"     : "NVDA",
-
-"HISTORY_DEPTH": "7000",
-"_commnet": "365 calendar days equals 250 busienss days",
-
-"LOOK_BACK_DAYS"    : "66",
-"TRAIN_BATCH_SIZE"  : "32",
-"TRAIN_EPOCS"        : "20",
-
-"FASTAI.STEP_DAYS"    : "5",
-"FASTAI.WINDOW_DAYS"  : "260",
-"FASTAI.FUTURE_DAYS"  : "22",
-
-"FASTAI.BUY_TH"  : "0.15",
-"FASTAI.SELL_TH"  : "-0.10",
-
-
-
-"_note": "KEEP THIS LINE LAST"
+    "_note": "KEEP THIS LINE LAST",
+    "data_directory": "data/",
+    "notebooks_directory": "notebooks/",
+    "src_directory": "src/",
+    "pickles_directory": "pickles/",
+    "images_directory": "images/",
+    "output_directory": "output/",
+    "notebook1": "dataprep_for_train.ipynb",
+    "notebook2": "train_models.ipynb",
+    "notebook3": "dataprep_for_inference.ipynb",
+    "notebook4": "predict_future.ipynb",
+    "notebook5": "imagesprep_for_fastai.ipynb",
+    "notebook6": "train_fastai.ipynb",
+    "notebook7": "recommand_investment_strategy.ipynb",
+    "notebook8": "train.ipynb",
+    "notebook9": "predict.ipynb",
+    "output1": "dataprep_for_train_output.ipynb",
+    "output2": "train_models_output.ipynb",
+    "output3": "dataprep_for_inference_output.ipynb",
+    "output4": "predict_future_output.ipynb",
+    "output5": "imagesprep_for_fastai_output.ipynb",
+    "output6": "train_fastai_output.ipynb",
+    "output7": "recommand_investment_strategy_output.ipynb",
+    "output8": "train_output.ipynb",
+    "output9": "predict_output.ipynb",
+    "chain_notebooks": "0",
+    "dataprep.override_csv": "1",
+    "TKL": "NVDA",
+    "PRED.DAYS": 10,
+    "HISTORY_DEPTH": "7000",
+    "_commnet": "365 calendar days equals 250 busienss days",
+    "LOOK_BACK_DAYS": "66",
+    "TRAIN_BATCH_SIZE": "32",
+    "TRAIN_EPOCS": "20",
+    "FASTAI.STEP_DAYS": "5",
+    "FASTAI.WINDOW_DAYS": "260",
+    "FASTAI.FUTURE_DAYS": "22",
+    "FASTAI.BUY_TH": "0.15",
+    "FASTAI.SELL_TH": "-0.10"
 }
