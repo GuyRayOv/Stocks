@@ -5,9 +5,10 @@
 
 This project is a comprehensive AI-based system designed to analyze financial markets, predict future stock prices, and recommend investment strategies. It employs a **hybrid approach** combining:
 
-1. **Deep Learning for Time Series:** LSTM, GRU, and CNN models analyzing numerical data.
-2. **Computer Vision for Charts:** A `fastai` model classifying stock chart images to determine market sentiment.
-3. **Generative AI:** An integrated LLM (Gemini) agent that parses natural language user prompts to trigger predictions.
+1. **Machin Learning for Time Series:** XGBoost is selecting top features for a TS dataset 
+2. **Deep Learning for Time Series:** LSTM, GRU, and CNN models and minxed-cobination analyzing numerical data.
+3. **Computer Vision for Charts:** `fastai` model classifying stock chart images to determine market sentiment.
+4. **Generative AI:** An integrated LLM (Gemini) agent that parses natural language user prompts to trigger predictions.
 
 ## 🚀 Key Features
 
@@ -102,22 +103,6 @@ Open `predict.ipynb` and provide a query (e.g., *"What is the outlook for NVDA f
 * Parse the ticker and horizon.
 * Fetch real-time data.
 * Output the predicted price curve and the visual investment strategy.
-
-
-# 🎯 Deep Learning study project for Time Series dataset
-
-This repository contains a modular **deep learning** project of **time series**, developed using YF'database  
-
----
-
-## 📘 Project Overview
-
-The project implements major stages of a deep learning pipeline for time series dataset, including:
-1. **Data preparation:** Build historical table for a ticker + exhogen indexes (S&P, NASDAQ, Oil, Gold, RealEstate, Inflation) with some 300 "rolling" features (lag, min, max, std, diff, pct, etc)
-2. **Images preparation:** Generate files of "rolling" graphs with the historical data of the ticker + Sale, Keep, Buy recomendation next to each graph
-3. **Feature recomandation:** Using ML/XGB to "suggest" best 20 features for each stock
-4. **Select NN and X_features:** Testing LSTM, GRU, CNN and mixed combinations with several subsets of features from XGB's recommendation 
-5. **Future prediction** – Using best MM and X_features to predict the next few days of the TKL
 
 ---
 
