@@ -73,9 +73,8 @@ This notebook serves as the application entry point:
 
 1. **Input:** Accepts a natural language prompt (processed via Gemini API) to identify the stock and timeframe.
 2. **Data Prep:** Downloads data up to the current date ("Today") and reproduces the specific features selected during training.
-3. **Execution:**
-* **Price Prediction:** Runs the best Time-Series model to forecast prices for the next few days.
-* **Strategy:** Generates a plot for the most recent year and uses the `fastai` model to classify the investment strategy (Buy/Keep/Sell) for the next quarter.
+3. * **Price Prediction:** Runs the best Time-Series model to forecast prices for the next few days.
+4. * **Strategy:** Generates a plot for the most recent year and uses the `fastai` model to classify the investment strategy (Buy/Keep/Sell) for the next quarter.
 
 
 
