@@ -65,7 +65,7 @@ This notebook handles the entire training lifecycle:
 
 ### `predict.ipynb` (Inference & Application)
 
-<img width="1750" height="1069" alt="image" src="https://github.com/user-attachments/assets/f005209d-f33b-415e-8b7a-4b972490c84f" />
+<img width="1404" height="1055" alt="image" src="https://github.com/user-attachments/assets/cfaa52a4-47a9-4653-9b3b-6b55b8781e6d" />
 
 This notebook serves as the application entry point:
 
