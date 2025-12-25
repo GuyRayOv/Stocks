@@ -6,9 +6,9 @@
 This project is a comprehensive AI-based system designed to analyze financial markets, predict future stock prices, and recommend investment strategies. It employs a **hybrid approach** combining:
 
 1. **Machin Learning for Time Series:** XGBoost is selecting top features for a TS dataset 
-2. **Deep Learning for Time Series:** LSTM, GRU, and CNN models and minxed-cobination analyzing numerical data.
-3. **Computer Vision for Charts:** `fastai` model classifying stock chart images to determine market sentiment.
-4. **Generative AI:** An integrated LLM (Gemini) agent that parses natural language user prompts to trigger predictions.
+2. **Deep Learning for Time Series:** LSTM, GRU, CNN models and minxed-cobination analyzing numerical data
+3. **Computer Vision for Charts:** `fastai` model classifying stock chart images to determine market sentiment
+4. **Generative AI:** An integrated LLM (Gemini) agent that parses natural language user prompts to trigger predictions
 
 ## 🚀 Key Features
 
