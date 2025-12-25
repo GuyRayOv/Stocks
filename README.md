@@ -1,3 +1,109 @@
+
+# Stock Prediction & Investment Strategy System
+
+## 📈 Project Overview
+
+This project is a comprehensive AI-based system designed to analyze financial markets, predict future stock prices, and recommend investment strategies. It employs a **hybrid approach** combining:
+
+1. **Deep Learning for Time Series:** LSTM, GRU, and CNN models analyzing numerical data.
+2. **Computer Vision for Charts:** A `fastai` model classifying stock chart images to determine market sentiment.
+3. **Generative AI:** An integrated LLM (Gemini) agent that parses natural language user prompts to trigger predictions.
+
+## 🚀 Key Features
+
+### 1. Robust Data Pipeline
+
+The system aggregates historical data for target stocks alongside key macroeconomic indicators to capture broader market trends:
+
+* **Target Assets:** Specific stock tickers.
+* **Macro Indicators:** Oil prices, Gold, S&P 500, NASDAQ, Real Estate indices, and Inflation rates.
+
+### 2. Advanced Feature Engineering
+
+* **Generation:** Creates approximately **300 time-series features**, including lags, min/max, mean, standard deviation, differences, and percentage changes.
+* **Selection:** Utilizes **XGBoost (XGB)** to identify the most significant features, reducing the dataset to the **top 20 impactful columns** for efficient training.
+
+### 3. Dual-Model Architecture
+
+#### 🧠 A. Time-Series Regression (Price Prediction)
+
+* **Architectures:** LSTM, GRU, CNN, and ensemble combinations.
+* **Goal:** Predict specific future stock prices.
+* **Performance:** The best model achieved an ** of ~97%**.
+
+#### 👁️ B. Visual Classification (Strategy Recommendation)
+
+* **Library:** `fastai` (Computer Vision).
+* **Methodology:**
+* Converts historical data into 1-year window plots.
+* Classifies each plot based on future performance into three categories: **BUY, KEEP, SELL**.
+
+
+* **Performance:** The best vision model achieved an accuracy/metric of **~73%**.
+
+### 4. LLM-Powered User Interface
+
+* Uses a **Gemini Agent** to interpret natural language prompts from the user.
+* Automatically extracts the **Target Ticker (TKL)** and the **Prediction Horizon (days)** to run the inference pipeline.
+
+---
+
+## 📂 Repository Structure
+
+### `train.ipynb` (Model Training)
+
+This notebook handles the entire training lifecycle:
+
+1. Downloads historical data for stocks and macro indicators.
+2. Generates and selects features (Top 20 via XGBoost).
+3. Trains the Time-Series models (LSTM/GRU/CNN).
+4. Generates historical plots and trains the `fastai` image classifier.
+5. Saves the best models and the recommended feature set.
+
+### `predict.ipynb` (Inference & Application)
+
+This notebook serves as the application entry point:
+
+1. **Input:** Accepts a natural language prompt (processed via Gemini API) to identify the stock and timeframe.
+2. **Data Prep:** Downloads data up to the current date ("Today") and reproduces the specific features selected during training.
+3. **Execution:**
+* **Price Prediction:** Runs the best Time-Series model to forecast prices for the next few days.
+* **Strategy:** Generates a plot for the most recent year and uses the `fastai` model to classify the investment strategy (Buy/Keep/Sell) for the next quarter.
+
+
+
+---
+
+## 🛠️ Requirements
+
+* Python 3.x
+* pandas, numpy
+* xgboost
+* tensorflow / keras (for LSTM/GRU/CNN)
+* fastai (for image classification)
+* google-generativeai (for Gemini API integration)
+* matplotlib / seaborn (for plot generation)
+
+## 📊 Results Summary
+
+| Model Type | Architecture | Task | Performance Metric |
+| --- | --- | --- | --- |
+| **Time Series** | LSTM/GRU/CNN | Price Prediction | **** |
+| **Computer Vision** | fastai (CNN) | Strategy (Buy/Sell) | **Score \approx 73%$** |
+
+---
+
+## 📝 Usage
+
+1. **Train the Models:**
+Run `train.ipynb` to download data, process features, and save the trained model artifacts (`.h5`, `.pkl`, etc.).
+2. **Make Predictions:**
+Open `predict.ipynb` and provide a query (e.g., *"What is the outlook for NVDA for the next 7 days?"*). The system will:
+* Parse the ticker and horizon.
+* Fetch real-time data.
+* Output the predicted price curve and the visual investment strategy.
+
+
 # 🎯 Deep Learning study project for Time Series dataset
 
 This repository contains a modular **deep learning** project of **time series**, developed using YF'database  
