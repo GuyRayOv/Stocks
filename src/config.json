@@ -37,6 +37,6 @@
     "FASTAI.STEP_DAYS": "5",
     "FASTAI.WINDOW_DAYS": "260",
     "FASTAI.FUTURE_DAYS": "22",
-    "FASTAI.BUY_TH": "0.15",
+    "FASTAI.BUY_TH": "0.10",
     "FASTAI.SELL_TH": "-0.10"
 }
