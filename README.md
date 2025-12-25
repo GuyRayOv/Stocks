@@ -50,6 +50,7 @@ The system aggregates historical data for target stocks alongside key macroecono
 ---
 
 ## 📂 Repository Structure
+<img width="1750" height="1019" alt="image" src="https://github.com/user-attachments/assets/29879d82-3c8b-4d9f-b9f1-9d9064362976" />
 
 ### `train.ipynb` (Model Training)
 
