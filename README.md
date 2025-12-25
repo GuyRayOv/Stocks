@@ -50,6 +50,7 @@ The system aggregates historical data for target stocks alongside key macroecono
 ---
 
 ## 📂 Repository Structure
+---
 
 ### `train.ipynb` (Model Training)
 
@@ -62,6 +63,7 @@ This notebook handles the entire training lifecycle:
 3. Trains the Time-Series models (LSTM/GRU/CNN).
 4. Generates historical plots and trains the `fastai` image classifier.
 5. Saves the best models and the recommended feature set.
+---
 
 ### `predict.ipynb` (Inference & Application)
 
