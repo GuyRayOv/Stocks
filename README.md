@@ -31,7 +31,7 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 ### 2️⃣ Advanced Feature Engineering & Selection
 
-- **Feature generation:** approximately **300 auto-generated time-series features** per asset, including:
+- **Feature generation:** approximately **300 auto-generated time-series features** per asset, including
   - Lagged values  
   - Rolling min / max / mean / std / diff / pct change /
 
