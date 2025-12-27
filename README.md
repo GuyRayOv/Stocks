@@ -31,9 +31,7 @@ All data is aligned temporally and prepared for time-series modeling.
 
 2️⃣ Advanced Feature Engineering & Selection
 
-Feature generation:
-
-~300 time-series features per asset, including:
+Feature generation: some 300 time-series features per asset, including:
 1. Lagged values
 2. Rolling min / max / mean / std / diff / pct_change
 
