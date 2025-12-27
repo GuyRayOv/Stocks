@@ -112,14 +112,14 @@ This model provides an intuitive, human-interpretable investment signal.
 │ └── recommend_investment_strategy.ipynb  # Vision-based recommendation
 │
 ├── src/
-│ ├── config.json         # Global configuration
-│ ├── my_project_utils.py # Shared helper functions
+│ ├── config.json                          # Global configuration
+│ ├── my_project_utils.py                  # Shared helper functions
 │ └── init.py
 │
-├── images/    # Generated chart images
-├── output/    # Logs and results
+├── images/                                # Generated chart images
+├── output/                                # Logs and results
 │
-├── pickles/   # Serialized models & datasets
+├── pickles/                               # Serialized models & datasets
 │ ├── <stock>.best_model.X_features.keras
 │ └── <stock>.df.pkl
 │
@@ -140,34 +140,35 @@ This model provides an intuitive, human-interpretable investment signal.
 
 ---
 
-## 🛠️ Requirements
-
-* Python 3.x
-* pandas, numpy
-* xgboost
-* tensorflow / keras (for LSTM/GRU/CNN)
-* fastai (for image classification)
-* google-generativeai (for Gemini API integration)
-* matplotlib / seaborn (for plot generation)
-
-## 📊 Results Summary
-
-| Model Type | Architecture | Task | Performance Metric |
-| --- | --- | --- | --- |
-| **Time Series** | LSTM/GRU/CNN | Price Prediction | **** |
-| **Computer Vision** | fastai (CNN) | Strategy (Buy/Sell) | **Score \approx 73%$** |
 
 ---
 
-## 📝 Usage
+## 🛠️ Requirements
 
-1. **Train the Models:**
-Run `train.ipynb` to download data, process features, and save the trained model artifacts (`.h5`, `.pkl`, etc.).
-2. **Make Predictions:**
-Open `predict.ipynb` and provide a query (e.g., *"What is the outlook for NVDA for the next 7 days?"*). The system will:
-* Parse the ticker and horizon.
-* Fetch real-time data.
-* Output the predicted price curve and the visual investment strategy.
+- Python 3.x  
+- pandas, numpy  
+- xgboost  
+- tensorflow / keras  
+- fastai  
+- google-generativeai  
+- matplotlib / seaborn  
+
+---
+
+## 📊 Results Summary
+
+| Model Type        | Architecture        | Task                     | Performance        |
+|------------------|---------------------|--------------------------|--------------------|
+| Time Series      | LSTM / GRU / CNN    | Price Prediction         | ~97%              |
+| Computer Vision  | fastai CNN          | Buy / Keep / Sell        | ~73% accuracy     |
+
+---
+
+## ▶️ How to Run
+
+1. **Clone** the repository
+2. Create a `.env` file in the runtime root (e.g. `/content/.env`)
+3. Define the project path:
 
 ---
 
