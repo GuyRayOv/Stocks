@@ -11,7 +11,8 @@ The system follows a **hybrid, multi-modal approach**:
 3. **Computer Vision for Strategy Classification** – A `fastai` CNN classifies price-chart images into BUY / KEEP / SELL  
 4. **LLM-Driven Interface** – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline  
 
----
+
+
 ⚠️ **Disclaimer:**  this project is for **research and educational purposes only**. It does **not** constitute financial advice.
 ---
 
@@ -45,7 +46,6 @@ All datasets are temporally aligned and prepared for time-series modeling.
 - **Feature selection:**  
   An **XGBoost (XGB)** model ranks feature importance and selects the **top 20 most impactful features**, significantly reducing dimensionality while preserving predictive performance.
 
---
 
 ### 3️⃣ Dual-Model Architecture
 
@@ -55,7 +55,6 @@ All datasets are temporally aligned and prepared for time-series modeling.
 - **Objective:** Predict future stock prices over a configurable horizon  
 - **Performance:** best-performing models achieved **~97% predictive performance** (R² / accuracy depending on configuration)
 
----
 
 #### 👁️ B. Visual Strategy Classification (Investment Recommendation)
 
@@ -72,7 +71,6 @@ All datasets are temporally aligned and prepared for time-series modeling.
 
 This model provides an intuitive, human-interpretable investment signal.
 
----
 
 ### 4️⃣ LLM-Powered Natural Language Interface
 
