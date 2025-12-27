@@ -117,7 +117,7 @@ The system aggregates historical stock prices together with macroeconomic indica
 
 ### `train.ipynb` (Model Training)
 
-<img width="1318" height="969" alt="image" src="https://github.com/user-attachments/assets/ad427a24-3962-4256-a112-f8b78922ade2" />
+<img width="1750" height="1057" alt="image" src="https://github.com/user-attachments/assets/b409c9dc-ac74-466f-8cb6-a910af3f202e" />
 
 ---
 
