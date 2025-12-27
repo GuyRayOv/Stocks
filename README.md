@@ -21,16 +21,27 @@ The system follows a hybrid, multi-modal approach:
 1️⃣ Robust Data Pipeline
 
 The system aggregates historical stock prices along with macroeconomic indicators to capture broader market dynamics.
+
 Inputs include:
+
 Target assets: Individual stock tickers
+
 Macroeconomic indicators:
+
 Oil (WTI)
+
 Gold
+
 S&P 500
+
 NASDAQ
+
 Real Estate indices
+
 Inflation expectations
+
 All data is aligned temporally and prepared for time-series modeling.
+
 
 2️⃣ Advanced Feature Engineering & Selection
 
