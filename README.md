@@ -16,8 +16,8 @@ The system follows a hybrid, multi-modal approach:
 🚀 Key Capabilities
 
 1️⃣ Robust Data Pipeline
-The system aggregates historical stock prices along with macroeconomic indicators to capture broader market dynamics.
 
+The system aggregates historical stock prices along with macroeconomic indicators to capture broader market dynamics.
 Inputs include:
 Target assets: Individual stock tickers
 Macroeconomic indicators:
@@ -30,34 +30,50 @@ Inflation expectations
 All data is aligned temporally and prepared for time-series modeling.
 
 2️⃣ Advanced Feature Engineering & Selection
+
 Feature generation:
+
 ~300 time-series features per asset, including:
 1. Lagged values
 2. Rolling min / max / mean / std / diff / pct_change
 
 Feature selection:
+
 An XGBoost (XGB) model ranks feature importance and selects the top 20 most impactful features, dramatically reducing dimensionality while preserving predictive power.
 
 3️⃣ Dual-Model Architecture
+
 🧠 A. Time-Series Regression (Price Forecasting)
+ 
 Models: LSTM, GRU, CNN, and hybrid/ensemble combinations
+
 Objective: Predict future stock prices over a user-defined horizon
+
 Performance: Best model achieved ~97% predictive performance (R² / accuracy depending on configuration)
 
 👁️ B. Visual Strategy Classification (Investment Recommendation)
+
 Framework: fastai (CNN-based computer vision)
+
 Methodology: Convert historical price data into rolling 1-year chart images, Label each image according to future price behavior
+
 Train a classifier to output:
 BUY
 KEEP
 SELL
+
 Performance: Best vision model achieved ~73% accuracy
+
 This model provides an intuitive, human-interpretable investment signal.
 
 4️⃣ LLM-Powered Natural Language Interface
+
 LLM: Google Gemini
+
 Functionality: Parses natural-language user prompts
+
 Extracts: Target ticker (TKL), Prediction horizon (days)
+
 Automatically triggers the inference pipeline
 
 Example prompt: “What is the outlook for the GPU compay over the next few days?”
