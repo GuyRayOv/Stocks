@@ -1,6 +1,6 @@
 # 📈 Stock Prediction & Investment Strategy System
 
-## 🔍 Project Overview
+## Project Overview
 
 This project is an **end-to-end AI system for stock market analysis**, combining **time-series forecasting**, **computer vision**, and **LLM** to predict future prices and generate actionable investment recommendations.
 
@@ -13,7 +13,7 @@ The system follows a **hybrid, multi-modal approach**:
 
 ---
 
-## 🚀 Key Capabilities
+## Key Capabilities
 
 ### 1️⃣ Robust Data Pipeline
 
@@ -39,14 +39,14 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 ### 3️⃣ Dual-Model Architecture
 
-#### 🧠 A. Time-Series Regression (Price Forecasting)
+#### A. Time-Series Regression (Price Forecasting)
 
 - **Models:** LSTM, GRU, CNN, and hybrid / ensemble combinations  
 - **Objective:** Predict future stock prices over a configurable horizon  
 - **Performance:** best-performing models achieved **~97% predictive performance** (R² / accuracy depending on configuration)
 
 
-#### 👁️ B. Visual Strategy Classification (Investment Recommendation)
+#### B. Visual Strategy Classification (Investment Recommendation)
 
 - **Framework:** `fastai` (CNN-based computer vision)  
 - **Methodology:**
