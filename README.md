@@ -143,8 +143,7 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 5. Configure training parameters in `src/config.json`
 6. Choose one:
 - **Train models:** run `notebooks/train.ipynb`
-- **Run inference via LLM:** run `notebooks/llm_api.ipynb`
-7. Click **Run All**
+- **Run inference via LLM API:** run `notebooks/llm_api.ipynb`
 
 ---
 
