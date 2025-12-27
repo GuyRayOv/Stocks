@@ -140,7 +140,7 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 2. Create a `.env` file in the runtime root (e.g. `/content/.env`)
 3. In `.env` define the project path: e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
 4. For prediction, add your Gemini API key in `.env`: i.e `GEMINI_API_KEY=apikey`
-5. For train, define your targt TKL in `src/config.json`
+5. For train, define your targt `TKL` parameter in `src/config.json`
 7. Choose one:
 -- **Train models:** run `notebooks/train.ipynb`
 -- **Run inference via LLM API:** run `notebooks/llm_api.ipynb`
