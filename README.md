@@ -1,98 +1,99 @@
-
 # 📈 Stock Prediction & Investment Strategy System
+
+## 🔍 Project Overview
+
+This project is an **end-to-end AI system for stock market analysis**, combining **time-series forecasting**, **computer vision**, and **large language models (LLMs)** to predict future prices and generate actionable investment recommendations.
+
+The system follows a **hybrid, multi-modal approach**:
+
+1. **Machine Learning for Feature Selection** – XGBoost identifies the most informative features from a rich time-series dataset  
+2. **Deep Learning for Time Series Forecasting** – LSTM, GRU, CNN, and hybrid architectures predict future prices  
+3. **Computer Vision for Strategy Classification** – A `fastai` CNN classifies price-chart images into BUY / KEEP / SELL  
+4. **LLM-Driven Interface** – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline  
 
 ---
 
-🔍 Project Overview
+## 🚀 Key Capabilities
 
-This project is an end-to-end AI system for stock market analysis, combining time-series forecasting, computer vision, and large language models (LLMs) to predict future prices and generate actionable investment recommendations.
+### 1️⃣ Robust Data Pipeline
 
-The system follows a hybrid, multi-modal approach:
+The system aggregates **historical stock prices** together with **macroeconomic indicators** to capture broader market dynamics.
 
-1. Machine Learning for Feature Selection – XGBoost identifies the most informative features from a rich time-series dataset
-2. Deep Learning for Time Series Forecasting – LSTM, GRU, CNN, and hybrid architectures predict future prices
-3. Computer Vision for Strategy Classification – A fastai CNN classifies price-chart images into BUY / KEEP / SELL
-4. LLM-Driven Interface – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline
- 
- ---
+**Inputs include:**
+- **Target assets:** Individual stock tickers  
+- **Macroeconomic indicators:**
+  - Oil (WTI)
+  - Gold
+  - S&P 500
+  - NASDAQ
+  - Real Estate indices
+  - Inflation expectations  
 
-🚀 Key Capabilities
+All datasets are temporally aligned and prepared for time-series modeling.
 
-1️⃣ Robust Data Pipeline
+---
 
-The system aggregates historical stock prices along with macroeconomic indicators to capture broader market dynamics.
+### 2️⃣ Advanced Feature Engineering & Selection
 
-Inputs include:
+- **Feature generation:**  
+  Approximately **300 time-series features** per asset, including:
+  - Lagged values  
+  - Rolling min / max / mean / std  
+  - First differences  
+  - Percentage changes  
 
-* Target assets: Individual stock tickers
+- **Feature selection:**  
+  An **XGBoost (XGB)** model ranks feature importance and selects the **top 20 most impactful features**, significantly reducing dimensionality while preserving predictive performance.
 
-* Macroeconomic indicators:
+---
 
- * Oil (WTI)
+### 3️⃣ Dual-Model Architecture
 
- * Gold
+#### 🧠 A. Time-Series Regression (Price Forecasting)
 
- * S&P 500
+- **Models:** LSTM, GRU, CNN, and hybrid / ensemble combinations  
+- **Objective:** Predict future stock prices over a configurable horizon  
+- **Performance:**  
+  - Best-performing models achieved **~97% predictive performance** (R² / accuracy depending on configuration)
 
- * NASDAQ
+---
 
- * Real Estate indices
+#### 👁️ B. Visual Strategy Classification (Investment Recommendation)
 
- * Inflation expectations
+- **Framework:** `fastai` (CNN-based computer vision)  
+- **Methodology:**
+  1. Convert historical price data into **rolling 1-year chart images**
+  2. Label each image according to **future price behavior**
+  3. Train a classifier to output:
+     - **BUY**
+     - **KEEP**
+     - **SELL**
 
-All data is aligned temporally and prepared for time-series modeling.
-
-
-2️⃣ Advanced Feature Engineering & Selection
-
-Feature generation: some 300 time-series features per asset, including:
-1. Lagged values
-2. Rolling min / max / mean / std / diff / pct_change
-
-Feature selection:
-
-An XGBoost (XGB) model ranks feature importance and selects the top 20 most impactful features, dramatically reducing dimensionality while preserving predictive power.
-
-3️⃣ Dual-Model Architecture
-
-🧠 A. Time-Series Regression (Price Forecasting)
- 
-Models: LSTM, GRU, CNN, and hybrid/ensemble combinations
-
-Objective: Predict future stock prices over a user-defined horizon
-
-Performance: Best model achieved ~97% predictive performance (R² / accuracy depending on configuration)
-
-👁️ B. Visual Strategy Classification (Investment Recommendation)
-
-Framework: fastai (CNN-based computer vision)
-
-Methodology: Convert historical price data into rolling 1-year chart images, Label each image according to future price behavior
-
-Train a classifier to output:
-BUY
-KEEP
-SELL
-
-Performance: Best vision model achieved ~73% accuracy
+- **Performance:**  
+  - Best vision model achieved **~73% accuracy**
 
 This model provides an intuitive, human-interpretable investment signal.
 
-4️⃣ LLM-Powered Natural Language Interface
+---
 
-LLM: Google Gemini
+### 4️⃣ LLM-Powered Natural Language Interface
 
-Functionality: Parses natural-language user prompts
+- **LLM:** Google Gemini  
+- **Functionality:**
+  - Parses natural-language user prompts  
+  - Extracts:
+    - Target ticker (TKL)
+    - Prediction horizon (days)
+  - Automatically triggers the inference pipeline  
 
-Extracts: Target ticker (TKL), Prediction horizon (days)
-
-Automatically triggers the inference pipeline
-
-Example prompt: “What is the outlook for the GPU compay over the next few days?”
+**Example prompt:**
+> *“What is the outlook for NVDA over the next 7 days?”*
 
 ---
 
 ## 📂 Repository Structure
+
+
 ---
 
 ### `train.ipynb` (Model Training)
