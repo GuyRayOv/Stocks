@@ -8,7 +8,7 @@ The system follows a **hybrid, multi-modal approach**:
 
 1. **Machine Learning for Feature Selection** – XGBoost identifies the most informative features from a rich time-series dataset  
 2. **Deep Learning for Time Series Forecasting** – LSTM, GRU, CNN, and hybrid architectures predict future prices  
-3. **Computer Vision for Strategy Classification** – A `fastai` CNN classifies price-chart images into BUY / KEEP / SELL  
+3. **Computer Vision for Strategy Classification** – A `fastai` classifies price-chart images into BUY / KEEP / SELL  
 4. **LLM-Driven Interface** – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline  
 
 ---
