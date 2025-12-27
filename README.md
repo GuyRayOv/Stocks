@@ -37,7 +37,7 @@ The system aggregates **historical stock prices** together with **macroeconomic 
   - Rolling min / max / mean / std / diff, pct_change
 
 - **Feature selection:**  
-  An **XGBoost** model ranks feature importance and selects the **top 20 most impactful features**, significantly reducing dimensionality while preserving predictive performance.
+  An **XGBoost** model ranks feature importance and selects the **top 20 most impactful features**
 
 ### 3️⃣ Dual-Model Architecture
 
