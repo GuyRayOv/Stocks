@@ -158,7 +158,7 @@ Open `predict.ipynb` and provide a query (e.g., *"What is the outlook for NVDA f
 4. To run [llm_api.ipynb](notebooks/llm_api.ipynb) define your Google API key in `.env` file, i.e `GOOGLE_API_KEY=apikey`
 5. To run [train.ipynb](notebooks/train.ipynb) define your target TKL and other train parameters in [config.json](src/config.json)
 6. Open [train.ipynb](notebooks/train.ipynb) to train the best model for the TKL, **OR**
-7. [llm_api.ipynb](notebooks/llm_api.ipynb) to predict the future of this TKL
+7. [llm_api.ipynb](notebooks/llm_api.ipynb) to predict the future of a previusly trained TKL
 8. Click Run All
 
 ---
