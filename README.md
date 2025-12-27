@@ -4,7 +4,7 @@
 
 This project is an end-to-end AI system for stock market analysis, combining **time-series forecasting**, **computer vision**, and **LLM** to predict future prices and generate actionable investment recommendations.
 
-The system follows a **hybrid, multi-modal approach**:
+The system follows a hybrid, multi-modal approach:
 
 1. **Machine Learning** for Feature Selection – XGBoost identifies the most informative features from a rich time-series dataset  
 2. **Deep Learning** for Time Series Forecasting – LSTM, GRU, CNN, and hybrid architectures predict future prices  
