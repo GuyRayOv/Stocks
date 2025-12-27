@@ -93,32 +93,46 @@ This model provides an intuitive, human-interpretable investment signal.
 
 ## 📂 Repository Structure
 
-
+{REPOSITORY_PATH}/
+│
+├── data/ # Time-series datasets (per stock)
+│ ├── <stock1>.df.csv
+│ └── <stockN>.df.csv
+│
+├── notebooks/
+│ ├── dataprep_for_train.ipynb # Feature engineering & selection
+│ ├── imagesprep_for_train.ipynb # Chart image generation
+│ ├── train_models.ipynb # Model selection & training
+│ ├── train.ipynb # End-to-end training pipeline
+│ ├── llm_api.ipynb # Gemini-based prompt parsing
+│ ├── predict.ipynb # Full inference pipeline
+│ ├── dataprep_for_inference.ipynb # Refresh data with latest prices
+│ ├── predict_future.ipynb # Time-series forecasting
+│ └── recommend_investment_strategy.ipynb # Vision-based recommendation
+│
+├── src/
+│ ├── config.json # Global configuration
+│ ├── my_project_utils.py # Shared helper functions
+│ └── init.py
+│
+├── images/ # Generated chart images
+├── output/ # Logs and results
+│
+├── pickles/ # Serialized models & datasets
+│ ├── <stock>.best_model.X_features.keras
+│ └── <stock>.df.pkl
+│
+├── README.md
+└── .gitignore
 ---
 
 ### `train.ipynb` (Model Training)
 
 <img width="1318" height="969" alt="image" src="https://github.com/user-attachments/assets/ad427a24-3962-4256-a112-f8b78922ade2" />
 
-This notebook handles the entire training lifecycle:
-
-1. Downloads historical data for stocks and macro indicators.
-2. Generates and selects features (Top 20 via XGBoost).
-3. Trains the Time-Series models (LSTM/GRU/CNN).
-4. Generates historical plots and trains the `fastai` image classifier.
-5. Saves the best models and the recommended feature set.
----
-
 ### `predict.ipynb` (Inference & Application)
 
 <img width="1404" height="1055" alt="image" src="https://github.com/user-attachments/assets/cfaa52a4-47a9-4653-9b3b-6b55b8781e6d" />
-
-This notebook serves as the application entry point:
-
-1. **Input:** Accepts a natural language prompt (processed via Gemini API) to identify the stock and timeframe.
-2. **Data Prep:** Downloads data up to the current date ("Today") and reproduces the specific features selected during training.
-3. **Price Prediction:** Runs the best Time-Series model to forecast prices for the next few days.
-4. **Strategy:** Generates a plot for the most recent year and uses the `fastai` model to classify the investment strategy (Buy/Keep/Sell) for the next quarter.
 
 
 
