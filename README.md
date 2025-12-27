@@ -2,14 +2,14 @@
 
 ## Project Overview
 
-This project is an **end-to-end AI system for stock market analysis**, combining **time-series forecasting**, **computer vision**, and **LLM** to predict future prices and generate actionable investment recommendations.
+This project is an end-to-end AI system for stock market analysis, combining **time-series forecasting**, **computer vision**, and **LLM** to predict future prices and generate actionable investment recommendations.
 
 The system follows a **hybrid, multi-modal approach**:
 
-1. **Machine Learning for Feature Selection** – XGBoost identifies the most informative features from a rich time-series dataset  
-2. **Deep Learning for Time Series Forecasting** – LSTM, GRU, CNN, and hybrid architectures predict future prices  
-3. **Computer Vision for Strategy Classification** – A `fastai` classifies price-chart images into BUY / KEEP / SELL  
-4. **LLM-Driven Interface** – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline  
+1. **Machine Learning** for Feature Selection – XGBoost identifies the most informative features from a rich time-series dataset  
+2. **Deep Learning** for Time Series Forecasting – LSTM, GRU, CNN, and hybrid architectures predict future prices  
+3. **Computer Vision** for Strategy Classification – A `fastai` classifies price-chart images into BUY / KEEP / SELL  
+4. **LLM-Driven User Interface** – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline  
 
 ---
 
@@ -17,11 +17,11 @@ The system follows a **hybrid, multi-modal approach**:
 
 ### 1️⃣ Robust Data Pipeline
 
-The system aggregates **historical stock prices** together with **macroeconomic indicators** to capture broader market dynamics.
+The system aggregates historical stock prices together with macroeconomic indicators to capture broader market dynamics.
 
 **Inputs include:**
-- **Target assets:** Individual stock tickers  
-- **Macroeconomic indicators:**
+- Target assets: Individual stock tickers  
+- Macroeconomic indicators:
   - Oil (WTI)
   - Gold
   - S&P 500
@@ -31,11 +31,11 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 ### 2️⃣ Advanced Feature Engineering & Selection
 
-- **Feature generation:** approximately **300 auto-generated time-series features** per asset, including
-  - Lagged values  
+- **Feature generation:** approximately 300 auto-generated time-series features per asset, including
+  - Lagged values
   - Rolling min / max / mean / std / diff / pct change /
 
-- **Feature selection:** an **XGBoost** model ranks feature importance and selects the **top 20 most impactful features**
+- **Feature selection:** an XGBoost model ranks feature importance and selects top 20 most impactful features
 
 ### 3️⃣ Dual-Model Architecture
 
@@ -43,21 +43,18 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 - **Models:** LSTM, GRU, CNN, and hybrid / ensemble combinations  
 - **Objective:** Predict future stock prices over a configurable horizon  
-- **Performance:** best-performing models achieved **~97% predictive performance** (R² / accuracy depending on configuration)
+- **Performance:** best-performing models achieved ~97% predictive performance (R² / accuracy depending on configuration)
 
 
 #### B. Visual Strategy Classification (Investment Recommendation)
 
 - **Framework:** `fastai` (CNN-based computer vision)  
 - **Methodology:**
-  1. Convert historical price data into **rolling 1-year chart images**
-  2. Label each image according to **future price behavior**
-  3. Train a classifier to output:
-     - **BUY**
-     - **KEEP**
-     - **SELL**
+  1. Convert historical price data into rolling 1-year chart images
+  2. Label each image according to future price behavior
+  3. Train a classifier to output: **BUY**, **KEEP**, **SELL**
 
-- **Performance:** best vision model achieved **~73% accuracy**
+- **Performance:** best vision model achieved ~73% accuracy
 
 ### 4️⃣ LLM-Powered Natural Language Interface
 
