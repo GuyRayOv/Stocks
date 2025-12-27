@@ -61,9 +61,6 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 - **Performance:** best vision model achieved **~73% accuracy**
 
-This model provides an intuitive, human-interpretable investment signal.
-
-
 ### 4️⃣ LLM-Powered Natural Language Interface
 
 - **LLM:** Google Gemini  
@@ -75,7 +72,7 @@ This model provides an intuitive, human-interpretable investment signal.
   - Automatically triggers the inference pipeline  
 
 **Example prompt:**
-> *“What is the outlook for NVDA over the next 7 days?”*
+> *“What is the outlook for the GPU company over the next 7 days?”*
 
 ---
 
