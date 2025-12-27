@@ -92,38 +92,40 @@ This model provides an intuitive, human-interpretable investment signal.
 ---
 
 ## 📂 Repository Structure
+```
 
 {REPOSITORY_PATH}/
 │
-├── data/ # Time-series datasets (per stock)
+├── data/                                  # Time-series datasets (per stock)
 │ ├── <stock1>.df.csv
 │ └── <stockN>.df.csv
 │
 ├── notebooks/
-│ ├── dataprep_for_train.ipynb # Feature engineering & selection
-│ ├── imagesprep_for_train.ipynb # Chart image generation
-│ ├── train_models.ipynb # Model selection & training
-│ ├── train.ipynb # End-to-end training pipeline
-│ ├── llm_api.ipynb # Gemini-based prompt parsing
-│ ├── predict.ipynb # Full inference pipeline
-│ ├── dataprep_for_inference.ipynb # Refresh data with latest prices
-│ ├── predict_future.ipynb # Time-series forecasting
-│ └── recommend_investment_strategy.ipynb # Vision-based recommendation
+│ ├── dataprep_for_train.ipynb             # Feature engineering & selection
+│ ├── imagesprep_for_train.ipynb           # Chart image generation
+│ ├── train_models.ipynb                   # Model selection & training
+│ ├── train.ipynb                          # End-to-end training pipeline
+│ ├── llm_api.ipynb                        # Gemini-based prompt parsing
+│ ├── predict.ipynb                        # Full inference pipeline
+│ ├── dataprep_for_inference.ipynb         # Refresh data with latest prices
+│ ├── predict_future.ipynb                 # Time-series forecasting
+│ └── recommend_investment_strategy.ipynb  # Vision-based recommendation
 │
 ├── src/
-│ ├── config.json # Global configuration
+│ ├── config.json         # Global configuration
 │ ├── my_project_utils.py # Shared helper functions
 │ └── init.py
 │
-├── images/ # Generated chart images
-├── output/ # Logs and results
+├── images/    # Generated chart images
+├── output/    # Logs and results
 │
-├── pickles/ # Serialized models & datasets
+├── pickles/   # Serialized models & datasets
 │ ├── <stock>.best_model.X_features.keras
 │ └── <stock>.df.pkl
 │
 ├── README.md
 └── .gitignore
+```
 ---
 
 ### `train.ipynb` (Model Training)
