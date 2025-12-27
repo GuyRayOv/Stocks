@@ -28,17 +28,17 @@ Inputs include:
 
 * Macroeconomic indicators:
 
-** Oil (WTI)
+ * Oil (WTI)
 
-** Gold
+ * Gold
 
-** S&P 500
+ * S&P 500
 
-** NASDAQ
+ * NASDAQ
 
-** Real Estate indices
+ * Real Estate indices
 
-** Inflation expectations
+ * Inflation expectations
 
 All data is aligned temporally and prepared for time-series modeling.
 
