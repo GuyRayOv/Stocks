@@ -11,8 +11,8 @@ The system follows a **hybrid, multi-modal approach**:
 3. **Computer Vision for Strategy Classification** – A `fastai` CNN classifies price-chart images into BUY / KEEP / SELL  
 4. **LLM-Driven Interface** – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline  
 
+---
 ⚠️ **Disclaimer:**  this project is for **research and educational purposes only**. It does **not** constitute financial advice.
-
 ---
 
 ## 🚀 Key Capabilities
@@ -33,7 +33,7 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 All datasets are temporally aligned and prepared for time-series modeling.
 
----
+
 
 ### 2️⃣ Advanced Feature Engineering & Selection
 
