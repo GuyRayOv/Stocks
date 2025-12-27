@@ -41,7 +41,7 @@ The system aggregates historical stock prices together with macroeconomic indica
 
 #### A. Time-Series Regression (Price Forecasting)
 
-- **Models:** LSTM, GRU, CNN, and hybrid / ensemble combinations  
+- **Models:** LSTM, GRU, CNN, and hybrid/ensemble combinations  
 - **Objective:** Predict future stock prices over a configurable horizon  
 - **Performance:** best-performing models achieved ~97% predictive performance (R² / accuracy depending on configuration)
 
