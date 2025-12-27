@@ -53,8 +53,7 @@ All datasets are temporally aligned and prepared for time-series modeling.
 
 - **Models:** LSTM, GRU, CNN, and hybrid / ensemble combinations  
 - **Objective:** Predict future stock prices over a configurable horizon  
-- **Performance:**  
-  - Best-performing models achieved **~97% predictive performance** (R² / accuracy depending on configuration)
+- **Performance:** best-performing models achieved **~97% predictive performance** (R² / accuracy depending on configuration)
 
 ---
 
@@ -69,8 +68,7 @@ All datasets are temporally aligned and prepared for time-series modeling.
      - **KEEP**
      - **SELL**
 
-- **Performance:**  
-  - Best vision model achieved **~73% accuracy**
+- **Performance:** best vision model achieved **~73% accuracy**
 
 This model provides an intuitive, human-interpretable investment signal.
 
