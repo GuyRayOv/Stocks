@@ -31,13 +31,11 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 ### 2️⃣ Advanced Feature Engineering & Selection
 
-- **Feature generation:**  
-  Approximately **300 time-series features** per asset, including:
+- **Feature generation:** approximately **300 auto-generated time-series features** per asset, including:
   - Lagged values  
   - Rolling min / max / mean / std / diff / pct change /
 
-- **Feature selection:**  
-  An **XGBoost** model ranks feature importance and selects the **top 20 most impactful features**
+- **Feature selection:** an **XGBoost** model ranks feature importance and selects the **top 20 most impactful features**
 
 ### 3️⃣ Dual-Model Architecture
 
