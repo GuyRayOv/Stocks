@@ -115,49 +115,51 @@ Open `predict.ipynb` and provide a query (e.g., *"What is the outlook for NVDA f
 ```
 {REPOSITORY_PATH}/
 │
-├── data/                             # TS dataset for each TKL, incouding exhogen indexs and ~20 XGB-recommended feaures
+├── data/                                   # TS dataset for each stock, including exogen indexs and soem 20 XGB-recommended feaures
 │   ├── <stock1>.df.csv
 |   .
 |   .
 |   └── <stockn>.df.csv
 │
 ├── notebooks/
-│   ├── dataprep_for_train.ipynb      # Data prep and feature recommendation
-│   ├── imagesprep_for_train.ipynb    # Images of graphs of the data
-|   ├── train_models.ipynb            # Select best MM and and X_feature
-|   ├── train.ipynb                   # Runing first two notebooks
-|   ├── dataprep_for_inference.ipynb  # Refresh dataset with the latest YF infromation
-│   ├── predict_future.ipynb          # Using best NN and X_features to predict ticker's future
-│   └── predict.ipynb                 # Running the last two notebooks
+│   ├── dataprep_for_train.ipynb            # Data prep and feature recommendation
+│   ├── imagesprep_for_train.ipynb          # Images of graphs of the data
+|   ├── train_models.ipynb                  # Select best MM and and X_feature
+|   ├── train.ipynb                         # Runing first two notebooks
+|   ├── llm_api.ipynb                       # Using Gemini to extract execution parameters from a natural langment proment, runing predit.ipynb with that
+|   ├── predict.ipynb                       # Running the last two notebooks
+|   ├── dataprep_for_inference.ipynb        # Refresh dataset with the latest YF infromation
+│   ├── predict_future.ipynb                # Using best NN and X_features to predict ticker's future
+│   └── recommand_invetmnet_strategy.ipynb  # Using best fastai model to generate recomendation from last 260days graph
 │
 ├── src/
-│   ├── config.json                   # Global project configuration file
-│   ├── my_project_utils.py           # Helper functions (shared across notebooks). For future use, currently empty
+│   ├── config.json                         # Global project configuration file
+│   ├── my_project_utils.py                 # Helper functions (shared across notebooks). For future use, currently empty
 │   └──__init__.py
 │
-├── images/                           # images of tkl graphs (to be used by fastai)
-├── output/                           # Logs, results, and generated file
+├── images/                                 # images of tkl graphs (used by fastai)
+├── output/                                 # Logs, results, and generated file
 │
-├── pickles/                          # Serialized models and dataframes
+├── pickles/                                # Serialized models and dataframes
 |   ├── <stock1>.best_model_name.X_features.keras
 |   .
 |   .
 |   └── <stockn>.best_model_named,X_features.keras
 |
-├── README.md                         # Project documentation (this file)
-└── .gitignore                        # Ignored files and folders
+├── README.md                               # Project documentation (this file)
+└── .gitignore                              # Ignored files and folders
 ```
 
 ## 🚀 How to Run
 
 1. **Clone** this repository to your local machine
 2. Create `.env` file in the root directory of the Runtime, e.g. `/contect/.env`
-5. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
-6. In `.env` define your Google API key i.e `GOOGLE_API_KEY=apikey`
-3. In [config.json](src/config.json) define your target TKL and other run parameters 
-4. Open [train.ipynb](notebooks/train.ipynb) to train the best model for the TKL, **OR**
-5. Open [predict.ipynb](notebooks/predict.ipynb) to predict the future of this TKL
-6. Click Run All
+3. In `.env` define `PROJECT_PATH` to point to your local copy. e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
+4. To run [llm_api.ipynb](notebooks/llm_api.ipynb) define your Google API key in `.env` file, i.e `GOOGLE_API_KEY=apikey`
+5. To run [train.ipynb](notebooks/train.ipynb) define your target TKL and other train parameters in [config.json](src/config.json)
+6. Open [train.ipynb](notebooks/train.ipynb) to train the best model for the TKL, **OR**
+7. [llm_api.ipynb](notebooks/llm_api.ipynb) to predict the future of this TKL
+8. Click Run All
 
 ---
 
