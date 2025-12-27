@@ -11,8 +11,7 @@ The system follows a **hybrid, multi-modal approach**:
 3. **Computer Vision for Strategy Classification** – A `fastai` CNN classifies price-chart images into BUY / KEEP / SELL  
 4. **LLM-Driven Interface** – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline  
 
-⚠️ **Disclaimer**  
-This project is for **research and educational purposes only**. It does **not** constitute financial advice.
+⚠️ **Disclaimer:**  this project is for **research and educational purposes only**. It does **not** constitute financial advice.
 
 ---
 
@@ -41,9 +40,7 @@ All datasets are temporally aligned and prepared for time-series modeling.
 - **Feature generation:**  
   Approximately **300 time-series features** per asset, including:
   - Lagged values  
-  - Rolling min / max / mean / std  
-  - First differences  
-  - Percentage changes  
+  - Rolling min / max / mean / std / diff, pct_change
 
 - **Feature selection:**  
   An **XGBoost (XGB)** model ranks feature importance and selects the **top 20 most impactful features**, significantly reducing dimensionality while preserving predictive performance.
