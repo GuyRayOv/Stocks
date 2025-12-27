@@ -76,6 +76,15 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 ---
 
+## 📊 Results Summary
+
+| Model Type        | Architecture        | Task                     | Performance      |
+|------------------|---------------------|--------------------------|-------------------|
+| Time Series      | LSTM / GRU / CNN    | Price Prediction         | ~97%              |
+| Computer Vision  | fastai CNN          | Buy / Keep / Sell        | ~73% accuracy     |
+
+---
+
 ## 📂 Repository Structure
 ```
 
@@ -122,15 +131,6 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 ### `predict.ipynb` (Inference & Application)
 
 <img width="1404" height="1055" alt="image" src="https://github.com/user-attachments/assets/cfaa52a4-47a9-4653-9b3b-6b55b8781e6d" />
-
----
-
-## 📊 Results Summary
-
-| Model Type        | Architecture        | Task                     | Performance      |
-|------------------|---------------------|--------------------------|-------------------|
-| Time Series      | LSTM / GRU / CNN    | Price Prediction         | ~97%              |
-| Computer Vision  | fastai CNN          | Buy / Keep / Sell        | ~73% accuracy     |
 
 ---
 
