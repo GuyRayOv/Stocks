@@ -1,5 +1,8 @@
 
-📈 Stock Prediction & Investment Strategy System
+# 📈 Stock Prediction & Investment Strategy System
+
+---
+
 🔍 Project Overview
 
 This project is an end-to-end AI system for stock market analysis, combining time-series forecasting, computer vision, and large language models (LLMs) to predict future prices and generate actionable investment recommendations.
