@@ -140,8 +140,8 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 4. For prediction, add your Gemini API key in `.env`: i.e `GEMINI_API_KEY=apikey`
 5. For train, define your targt `TKL` parameter in `src/config.json`
 7. Choose one:
--- **Train models:** run `notebooks/train.ipynb`
--- **Run inference via LLM API:** run `notebooks/llm_api.ipynb`
+8. **Train models:** run `notebooks/train.ipynb`
+9. **Run inference via LLM API:** run `notebooks/llm_api.ipynb`
 
 ---
 
