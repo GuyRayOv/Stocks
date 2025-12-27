@@ -123,7 +123,7 @@ The system aggregates historical stock prices together with macroeconomic indica
 
 ### `llm_api.ipynb` (Inference & Application)
 
-<img width="1404" height="1055" alt="image" src="https://github.com/user-attachments/assets/cfaa52a4-47a9-4653-9b3b-6b55b8781e6d" />
+<img width="1404" height="1055" alt="image" src="https://github.com/user-attachments/assets/9d4c6589-95d8-4d90-9ac5-1bcc2aaf08ae" />
 
 ---
 
