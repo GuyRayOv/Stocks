@@ -150,15 +150,6 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 ## 📦 Project Deliverables
 
-- `data/*.csv` – Time-series datasets with selected XGB features  
-- `pickles/*.pkl` – Serialized inference-ready datasets  
-- `pickles/*.keras` – Best trained models per stock  
-- `images/*.png` – Chart images for vision-based strategy classification  
-
----
-
-## 📦 Project Deliverables
-
 - `data/` – Time-series datasets with selected XGB features  
 - `pickles/` – Best trained models per stock  
 - `images/` – Chart images for vision-based strategy classification
