@@ -61,9 +61,7 @@ The system aggregates historical stock prices together with macroeconomic indica
 - **LLM:** Google Gemini  
 - **Functionality:**
   - Parses natural-language user prompts  
-  - Extracts:
-    - Target ticker (TKL)
-    - Prediction horizon (days)
+  - Extracts: Target ticker (TKL), Prediction horizon (days)
   - Automatically triggers the inference pipeline  
 
 **Example prompt:**
