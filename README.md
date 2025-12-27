@@ -24,21 +24,21 @@ The system aggregates historical stock prices along with macroeconomic indicator
 
 Inputs include:
 
-Target assets: Individual stock tickers
+* Target assets: Individual stock tickers
 
-Macroeconomic indicators:
+* Macroeconomic indicators:
 
-Oil (WTI)
+** Oil (WTI)
 
-Gold
+** Gold
 
-S&P 500
+** S&P 500
 
-NASDAQ
+** NASDAQ
 
-Real Estate indices
+** Real Estate indices
 
-Inflation expectations
+** Inflation expectations
 
 All data is aligned temporally and prepared for time-series modeling.
 
