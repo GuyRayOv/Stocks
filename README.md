@@ -1,6 +1,6 @@
 # 📈 Stock Prediction & Investment Strategy System
 
-## 🔍 Project Overview
+## Project Overview
 
 This project is an **end-to-end AI system for stock market analysis**, combining **time-series forecasting**, **computer vision**, and **LLM** to predict future prices and generate actionable investment recommendations.
 
@@ -8,12 +8,12 @@ The system follows a **hybrid, multi-modal approach**:
 
 1. **Machine Learning for Feature Selection** – XGBoost identifies the most informative features from a rich time-series dataset  
 2. **Deep Learning for Time Series Forecasting** – LSTM, GRU, CNN, and hybrid architectures predict future prices  
-3. **Computer Vision for Strategy Classification** – A `fastai` CNN classifies price-chart images into BUY / KEEP / SELL  
+3. **Computer Vision for Strategy Classification** – A `fastai` classifies price-chart images into BUY / KEEP / SELL  
 4. **LLM-Driven Interface** – A Gemini agent interprets natural-language user queries and triggers the prediction pipeline  
 
 ---
 
-## 🚀 Key Capabilities
+## Key Capabilities
 
 ### 1️⃣ Robust Data Pipeline
 
@@ -31,24 +31,22 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 
 ### 2️⃣ Advanced Feature Engineering & Selection
 
-- **Feature generation:**  
-  Approximately **300 time-series features** per asset, including:
+- **Feature generation:** approximately **300 auto-generated time-series features** per asset, including
   - Lagged values  
-  - Rolling min / max / mean / std / diff, pct_change
+  - Rolling min / max / mean / std / diff / pct change /
 
-- **Feature selection:**  
-  An **XGBoost** model ranks feature importance and selects the **top 20 most impactful features**
+- **Feature selection:** an **XGBoost** model ranks feature importance and selects the **top 20 most impactful features**
 
 ### 3️⃣ Dual-Model Architecture
 
-#### 🧠 A. Time-Series Regression (Price Forecasting)
+#### A. Time-Series Regression (Price Forecasting)
 
 - **Models:** LSTM, GRU, CNN, and hybrid / ensemble combinations  
 - **Objective:** Predict future stock prices over a configurable horizon  
 - **Performance:** best-performing models achieved **~97% predictive performance** (R² / accuracy depending on configuration)
 
 
-#### 👁️ B. Visual Strategy Classification (Investment Recommendation)
+#### B. Visual Strategy Classification (Investment Recommendation)
 
 - **Framework:** `fastai` (CNN-based computer vision)  
 - **Methodology:**
@@ -139,11 +137,11 @@ The system aggregates **historical stock prices** together with **macroeconomic 
 1. **Clone** the repository
 2. Create a `.env` file in the runtime root (e.g. `/content/.env`)
 3. In `.env` define the project path: e.g. `PROJECT_PATH=/content/drive/MyDrive/Projects/GitHub/Stocks/`
-4. Add your Gemini API key: i.e `GEMINI_API_KEY=apikey`
-5. Configure training parameters in `src/config.json`
-6. Choose one:
-- **Train models:** run `notebooks/train.ipynb`
-- **Run inference via LLM API:** run `notebooks/llm_api.ipynb`
+4. For prediction, add your Gemini API key in `.env`: i.e `GEMINI_API_KEY=apikey`
+5. For train, define your targt `TKL` parameter in `src/config.json`
+7. Choose one:
+8. To **train models:** run `notebooks/train.ipynb`
+9. For **inference a stock via LLM API:** run `notebooks/llm_api.ipynb`
 
 ---
 
