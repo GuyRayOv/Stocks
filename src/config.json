@@ -26,7 +26,7 @@
     "output9": "predict_output.ipynb",
     "chain_notebooks": "0",
     "dataprep.override_csv": "1",
-    "TKL": "MSFT",
+    "TKL": "TEVA",
     "PRED.DAYS": 3,
     "HISTORY_DEPTH": "7000",
     "_commnet": "365 calendar days equals 250 busienss days",
