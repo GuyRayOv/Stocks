@@ -83,8 +83,9 @@ The system aggregates historical stock prices together with macroeconomic indica
 
 {REPOSITORY_PATH}/
 │
-├── data/                                  # Time-series datasets (per stock)
-│ ├── <stock1>.df.csv
+├── data/                                 
+│ ├── Project Slides.pptx
+│ ├── <stock1>.df.csv                     # Time-series datasets (per stock)
 │ └── <stockN>.df.csv
 │
 ├── notebooks/
