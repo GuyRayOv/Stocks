@@ -143,6 +143,7 @@ The system aggregates historical stock prices together with macroeconomic indica
 
 ## 📦 Project Deliverables
 
+- 
 - `data/` – Time-series datasets with selected XGB features  
 - `pickles/` – Best trained models per stock  
 - `images/` – Chart images for vision-based strategy classification
